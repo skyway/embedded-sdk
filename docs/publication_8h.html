@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: publication.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('publication_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">publication.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Publicationのメタデータ更新・フレーム送信とイベントハンドラの登録。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="member_8h_source.html">member.h</a>&quot;</code><br />
+</div>
+<p><a href="publication_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:skw_5Froom_5Fpublication_5Fdata_5Ffield_5Ft" id="r_skw_5Froom_5Fpublication_5Fdata_5Ffield_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__publication__data__field__t.html">skw_room_publication_data_field_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicationの取得結果を受け取る出力先。NULLを設定したフィールドには格納されない。  <a href="structskw__room__publication__data__field__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Fpublication_5Fupdate_5Fmetadata_5Fparams_5Ft" id="r_skw_5Froom_5Fpublication_5Fupdate_5Fmetadata_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__publication__update__metadata__params__t.html">skw_room_publication_update_metadata_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_update_metadataのパラメータ。  <a href="structskw__room__publication__update__metadata__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Fpublication_5Fsend_5Fdata_5Fparams_5Ft" id="r_skw_5Froom_5Fpublication_5Fsend_5Fdata_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__publication__send__data__params__t.html">skw_room_publication_send_data_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_send_dataのパラメータ。  <a href="structskw__room__publication__send__data__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Fpublication_5Fsend_5Fframe_5Fparams_5Ft" id="r_skw_5Froom_5Fpublication_5Fsend_5Fframe_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__publication__send__frame__params__t.html">skw_room_publication_send_frame_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_send_video_frame/send_audio_frameのパラメータ。  <a href="structskw__room__publication__send__frame__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Fpublication_5Fhandlers_5Ft" id="r_skw_5Froom_5Fpublication_5Fhandlers_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__publication__handlers__t.html">skw_room_publication_handlers_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicationの各イベント通知を受け取るハンドラ。不要なイベントのフィールドはNULLにできる。  <a href="structskw__room__publication__handlers__t.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a7ac876cedd6c3031993ba11b9a49120d" id="r_a7ac876cedd6c3031993ba11b9a49120d"><td class="memItemLeft" align="right" valign="top"><a id="a7ac876cedd6c3031993ba11b9a49120d" name="a7ac876cedd6c3031993ba11b9a49120d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKW_ROOM_PUBLICATION_ID_SIZE</b>&#160;&#160;&#160;(36+1)</td></tr>
+<tr class="memdesc:a7ac876cedd6c3031993ba11b9a49120d"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationIDを格納するバッファのサイズ（NUL終端を含む）。 <br /></td></tr>
+<tr class="memitem:a647d878e80e3404be06bb74e542a0a3b" id="r_a647d878e80e3404be06bb74e542a0a3b"><td class="memItemLeft" align="right" valign="top"><a id="a647d878e80e3404be06bb74e542a0a3b" name="a647d878e80e3404be06bb74e542a0a3b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKW_ROOM_PUBLICATION_METADATA_SIZE</b>&#160;&#160;&#160;(1024+1)</td></tr>
+<tr class="memdesc:a647d878e80e3404be06bb74e542a0a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationMetadataを格納するバッファのサイズ（NUL終端を含む）。 <br /></td></tr>
+<tr class="memitem:a78938811e5805694e436c0c1a016876a" id="r_a78938811e5805694e436c0c1a016876a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78938811e5805694e436c0c1a016876a">SKW_ROOM_PUBLICATION_UPDATE_METADATA_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a78938811e5805694e436c0c1a016876a"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_update_metadata_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+<tr class="memitem:a4dcddc104286ef5bb2f6f3d892097e77" id="r_a4dcddc104286ef5bb2f6f3d892097e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dcddc104286ef5bb2f6f3d892097e77">SKW_ROOM_PUBLICATION_SEND_DATA_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a4dcddc104286ef5bb2f6f3d892097e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_send_data_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+<tr class="memitem:a3e25bce4b65454d364e38a9d451612a5" id="r_a3e25bce4b65454d364e38a9d451612a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e25bce4b65454d364e38a9d451612a5">SKW_ROOM_PUBLICATION_SEND_FRAME_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a3e25bce4b65454d364e38a9d451612a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_publication_send_frame_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:aa228293f298561ddae74b4fca7ee57d8" id="r_aa228293f298561ddae74b4fca7ee57d8"><td class="memItemLeft" align="right" valign="top"><a id="aa228293f298561ddae74b4fca7ee57d8" name="aa228293f298561ddae74b4fca7ee57d8"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>skw_room_publication_id_t</b>[<a class="el" href="#a7ac876cedd6c3031993ba11b9a49120d">SKW_ROOM_PUBLICATION_ID_SIZE</a>]</td></tr>
+<tr class="memdesc:aa228293f298561ddae74b4fca7ee57d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationIDを格納する文字列型（NUL終端を含む）。 <br /></td></tr>
+<tr class="memitem:a44bce348275ce11d2149f6ca847d0c53" id="r_a44bce348275ce11d2149f6ca847d0c53"><td class="memItemLeft" align="right" valign="top"><a id="a44bce348275ce11d2149f6ca847d0c53" name="a44bce348275ce11d2149f6ca847d0c53"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>skw_room_publication_metadata_t</b>[<a class="el" href="#a647d878e80e3404be06bb74e542a0a3b">SKW_ROOM_PUBLICATION_METADATA_SIZE</a>]</td></tr>
+<tr class="memdesc:a44bce348275ce11d2149f6ca847d0c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationMetadataを格納する文字列型（NUL終端を含む）。 <br /></td></tr>
+<tr class="memitem:a402a4d8069bd93ea4febfeada143b843" id="r_a402a4d8069bd93ea4febfeada143b843"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a402a4d8069bd93ea4febfeada143b843">skw_room_publication_on_keyframe_request_t</a>) (const char *publication_id)</td></tr>
+<tr class="memdesc:a402a4d8069bd93ea4febfeada143b843"><td class="mdescLeft">&#160;</td><td class="mdescRight">キーフレームの生成要求を受け取るハンドラ。subscriberが映像を復号できないときに呼ばれます。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:ad4d1c119768dd5c368fde32d6a185fd8" id="r_ad4d1c119768dd5c368fde32d6a185fd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> { <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a280a6ed27ab13747bae58d18fd193d72">SKW_ROOM_PUBLICATION_OK</a> = 0
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a014761ffa4ed367b40c3fd78ae2873b8">SKW_ROOM_PUBLICATION_ERR_NULL_ARGS</a> = 1
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a12c186322ddcfb46d7bd6ebb46ee0d7e">SKW_ROOM_PUBLICATION_ERR_INVALID_ARGS</a> = 2
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a2469a725d36be052ae68b909d38ea84f">SKW_ROOM_PUBLICATION_ERR_CONTEXT_NOT_INITED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a0b498e887e3aec4f33b9af46673869e8">SKW_ROOM_PUBLICATION_ERR_CONTEXT_NOT_SETUP</a> = 4
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a393dd3bbdc136b97340c4428a06e69e0">SKW_ROOM_PUBLICATION_ERR_REQUEST_FAILED</a> = 5
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a4f6186b2acb9073240e0aea65a921cf7">SKW_ROOM_PUBLICATION_ERR_MUTEX_UNLOCK_FAILED</a> = 6
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8adca1da167ed301222039bee627a8f35d">SKW_ROOM_PUBLICATION_ERR_CALLED_IN_HANDLER</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8ae34dccf58f8c9e6ed422c888b5eb9821">SKW_ROOM_PUBLICATION_ERR_SEND_FAILED</a> = 8
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a66555892fa93d5b4c2f8d3a212baa1e0">SKW_ROOM_PUBLICATION_ERR_TIMEOUT</a> = 9
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8ad9bff1d7db33678a1120798a0c3b67b5">SKW_ROOM_PUBLICATION_ERR_CONNECTION_CLOSED</a> = 10
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8ad910b9ab68d55a11b52a5665ed9e4fea">SKW_ROOM_PUBLICATION_ERR_RESPONSE_TOO_LARGE</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8aabd3a137656eeda1f533fc9afa5035c7">SKW_ROOM_PUBLICATION_ERR_RESPONSE_PARSE_FAILED</a> = 12
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a1916098716c71fc458d3268892b6968d">SKW_ROOM_PUBLICATION_ERR_NOT_JOINED</a> = 13
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a34b8225ecbd8f1f6373cdf538396b666">SKW_ROOM_PUBLICATION_ERR_CONTENT_TYPE_MISMATCH</a> = 14
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a8753dd569828ebc9acfe902f9d058bfd">SKW_ROOM_PUBLICATION_ERR_NOT_PUBLISHED</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a354bba7654682c1a8e8c35e66f7c03ea">SKW_ROOM_PUBLICATION_ERR_UNKNOWN</a> = 99
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8ab0466e933aa907a949726f7cb440a148">SKW_ROOM_PUBLICATION_ERR_BAD_REQUEST</a> = 400
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a3469bfcda743598d83e1f8f6cd6cafc9">SKW_ROOM_PUBLICATION_ERR_UNAUTHORIZED</a> = 401
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8ae39ed9124d7b6c4333464344ee1b53e0">SKW_ROOM_PUBLICATION_ERR_FORBIDDEN</a> = 403
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8adf315e0d36acea2d3545c0875679f35b">SKW_ROOM_PUBLICATION_ERR_NOT_FOUND</a> = 404
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8afd11ef2b66519c6128e96387767403e7">SKW_ROOM_PUBLICATION_ERR_ALREADY_EXIST</a> = 409
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a43ee0c367cfbeb1d1f619e1d165c2626">SKW_ROOM_PUBLICATION_ERR_TOO_LARGE</a> = 413
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a9a451750ae6e22947fe0d0d9d952d715">SKW_ROOM_PUBLICATION_ERR_TOO_MANY_REQUESTS</a> = 429
+, <br />
+&#160;&#160;<a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a90fb823f6fe884e70f10deddb70e8085">SKW_ROOM_PUBLICATION_ERR_SERVER_INTERNAL</a> = 500
+, <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8a0769459b636a7902d8674ae066320c55">SKW_ROOM_PUBLICATION_ERR_SERVER_BUSY</a> = 503
+<br />
+ }</td></tr>
+<tr class="memdesc:ad4d1c119768dd5c368fde32d6a185fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publication APIのエラーコード。  <a href="#ad4d1c119768dd5c368fde32d6a185fd8">[詳解]</a><br /></td></tr>
+<tr class="memitem:ae0172dd4c5dae6a76a8733fab732c129" id="r_ae0172dd4c5dae6a76a8733fab732c129"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0172dd4c5dae6a76a8733fab732c129">skw_room_publication_type_t</a> { <a class="el" href="#ae0172dd4c5dae6a76a8733fab732c129abed543ad2f602d5ee321a0768308013c">SKW_ROOM_PUBLICATION_TYPE_P2P</a> = 0
+, <a class="el" href="#ae0172dd4c5dae6a76a8733fab732c129a8e6852bfaa45062358c4f52cabfdf9d0">SKW_ROOM_PUBLICATION_TYPE_SFU</a> = 1
+ }</td></tr>
+<tr class="memdesc:ae0172dd4c5dae6a76a8733fab732c129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicationの配信方式。  <a href="#ae0172dd4c5dae6a76a8733fab732c129">[詳解]</a><br /></td></tr>
+<tr class="memitem:a66697bd5bf80accd5dd7251607ed2420" id="r_a66697bd5bf80accd5dd7251607ed2420"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66697bd5bf80accd5dd7251607ed2420">skw_room_publication_content_type_t</a> { <a class="el" href="#a66697bd5bf80accd5dd7251607ed2420a3f25b8e05aa83102fffed8069cb80242">SKW_ROOM_PUBLICATION_CONTENT_TYPE_VIDEO</a> = 0
+, <a class="el" href="#a66697bd5bf80accd5dd7251607ed2420a04fd162942a8fd1ac96a079b44441e13">SKW_ROOM_PUBLICATION_CONTENT_TYPE_AUDIO</a> = 1
+, <a class="el" href="#a66697bd5bf80accd5dd7251607ed2420aa1dd9aff0c568a147de0fb3c846284a3">SKW_ROOM_PUBLICATION_CONTENT_TYPE_DATA</a> = 2
+ }</td></tr>
+<tr class="memdesc:a66697bd5bf80accd5dd7251607ed2420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicationのコンテンツ種別。  <a href="#a66697bd5bf80accd5dd7251607ed2420">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a59a7cc19cb5516e6b548192f1a189fb0" id="r_a59a7cc19cb5516e6b548192f1a189fb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59a7cc19cb5516e6b548192f1a189fb0">skw_room_publication_register_handlers</a> (const <a class="el" href="structskw__room__publication__handlers__t.html">skw_room_publication_handlers_t</a> *handlers)</td></tr>
+<tr class="memdesc:a59a7cc19cb5516e6b548192f1a189fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publicationのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。  <br /></td></tr>
+<tr class="memitem:ad5a5e93b340d08a807c9332be1b62b81" id="r_ad5a5e93b340d08a807c9332be1b62b81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5a5e93b340d08a807c9332be1b62b81">skw_room_publication_unregister_handlers</a> (void)</td></tr>
+<tr class="memdesc:ad5a5e93b340d08a807c9332be1b62b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録済みのイベント通知ハンドラを解除します。  <br /></td></tr>
+<tr class="memitem:a863e71c6d2d4cd9afc088f1aaf7c90e2" id="r_a863e71c6d2d4cd9afc088f1aaf7c90e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a863e71c6d2d4cd9afc088f1aaf7c90e2">skw_room_publication_update_metadata</a> (const <a class="el" href="structskw__room__publication__update__metadata__params__t.html">skw_room_publication_update_metadata_params_t</a> *params)</td></tr>
+<tr class="memdesc:a863e71c6d2d4cd9afc088f1aaf7c90e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationのMetadataを更新します。  <br /></td></tr>
+<tr class="memitem:ae63f2c0f043314c8b6cc7082d29184b2" id="r_ae63f2c0f043314c8b6cc7082d29184b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae63f2c0f043314c8b6cc7082d29184b2">skw_room_publication_send_data</a> (const <a class="el" href="structskw__room__publication__send__data__params__t.html">skw_room_publication_send_data_params_t</a> *params)</td></tr>
+<tr class="memdesc:ae63f2c0f043314c8b6cc7082d29184b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublishしたDataStreamへデータを送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。  <br /></td></tr>
+<tr class="memitem:a1e27564f84e19fd8668ddb9efe468d31" id="r_a1e27564f84e19fd8668ddb9efe468d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e27564f84e19fd8668ddb9efe468d31">skw_room_publication_send_video_frame</a> (const <a class="el" href="structskw__room__publication__send__frame__params__t.html">skw_room_publication_send_frame_params_t</a> *params)</td></tr>
+<tr class="memdesc:a1e27564f84e19fd8668ddb9efe468d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublishしたVideoStreamへエンコード済みフレーム（H.264）を送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。  <br /></td></tr>
+<tr class="memitem:a8fd6cb1a85cbdae635a86d4801dd78a1" id="r_a8fd6cb1a85cbdae635a86d4801dd78a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fd6cb1a85cbdae635a86d4801dd78a1">skw_room_publication_send_audio_frame</a> (const <a class="el" href="structskw__room__publication__send__frame__params__t.html">skw_room_publication_send_frame_params_t</a> *params)</td></tr>
+<tr class="memdesc:a8fd6cb1a85cbdae635a86d4801dd78a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublishしたAudioStreamへエンコード済みフレーム（Opus）を送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Publicationのメタデータ更新・フレーム送信とイベントハンドラの登録。 </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a4dcddc104286ef5bb2f6f3d892097e77" name="a4dcddc104286ef5bb2f6f3d892097e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dcddc104286ef5bb2f6f3d892097e77">&#9670;&#160;</a></span>SKW_ROOM_PUBLICATION_SEND_DATA_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_PUBLICATION_SEND_DATA_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_publication_send_data_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a id="a3e25bce4b65454d364e38a9d451612a5" name="a3e25bce4b65454d364e38a9d451612a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e25bce4b65454d364e38a9d451612a5">&#9670;&#160;</a></span>SKW_ROOM_PUBLICATION_SEND_FRAME_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_PUBLICATION_SEND_FRAME_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_publication_send_frame_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a id="a78938811e5805694e436c0c1a016876a" name="a78938811e5805694e436c0c1a016876a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78938811e5805694e436c0c1a016876a">&#9670;&#160;</a></span>SKW_ROOM_PUBLICATION_UPDATE_METADATA_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_PUBLICATION_UPDATE_METADATA_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_publication_update_metadata_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="a402a4d8069bd93ea4febfeada143b843" name="a402a4d8069bd93ea4febfeada143b843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402a4d8069bd93ea4febfeada143b843">&#9670;&#160;</a></span>skw_room_publication_on_keyframe_request_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* skw_room_publication_on_keyframe_request_t) (const char *publication_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キーフレームの生成要求を受け取るハンドラ。subscriberが映像を復号できないときに呼ばれます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">publication_id</td><td>要求されたPublicationのID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="a66697bd5bf80accd5dd7251607ed2420" name="a66697bd5bf80accd5dd7251607ed2420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66697bd5bf80accd5dd7251607ed2420">&#9670;&#160;</a></span>skw_room_publication_content_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a66697bd5bf80accd5dd7251607ed2420">skw_room_publication_content_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publicationのコンテンツ種別。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a66697bd5bf80accd5dd7251607ed2420a3f25b8e05aa83102fffed8069cb80242" name="a66697bd5bf80accd5dd7251607ed2420a3f25b8e05aa83102fffed8069cb80242"></a>SKW_ROOM_PUBLICATION_CONTENT_TYPE_VIDEO&#160;</td><td class="fielddoc"><p>映像 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a66697bd5bf80accd5dd7251607ed2420a04fd162942a8fd1ac96a079b44441e13" name="a66697bd5bf80accd5dd7251607ed2420a04fd162942a8fd1ac96a079b44441e13"></a>SKW_ROOM_PUBLICATION_CONTENT_TYPE_AUDIO&#160;</td><td class="fielddoc"><p>音声 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a66697bd5bf80accd5dd7251607ed2420aa1dd9aff0c568a147de0fb3c846284a3" name="a66697bd5bf80accd5dd7251607ed2420aa1dd9aff0c568a147de0fb3c846284a3"></a>SKW_ROOM_PUBLICATION_CONTENT_TYPE_DATA&#160;</td><td class="fielddoc"><p>データ </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad4d1c119768dd5c368fde32d6a185fd8" name="ad4d1c119768dd5c368fde32d6a185fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d1c119768dd5c368fde32d6a185fd8">&#9670;&#160;</a></span>skw_room_publication_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publication APIのエラーコード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a280a6ed27ab13747bae58d18fd193d72" name="ad4d1c119768dd5c368fde32d6a185fd8a280a6ed27ab13747bae58d18fd193d72"></a>SKW_ROOM_PUBLICATION_OK&#160;</td><td class="fielddoc"><p>正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a014761ffa4ed367b40c3fd78ae2873b8" name="ad4d1c119768dd5c368fde32d6a185fd8a014761ffa4ed367b40c3fd78ae2873b8"></a>SKW_ROOM_PUBLICATION_ERR_NULL_ARGS&#160;</td><td class="fielddoc"><p>引数がNULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a12c186322ddcfb46d7bd6ebb46ee0d7e" name="ad4d1c119768dd5c368fde32d6a185fd8a12c186322ddcfb46d7bd6ebb46ee0d7e"></a>SKW_ROOM_PUBLICATION_ERR_INVALID_ARGS&#160;</td><td class="fielddoc"><p>引数の値が不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a2469a725d36be052ae68b909d38ea84f" name="ad4d1c119768dd5c368fde32d6a185fd8a2469a725d36be052ae68b909d38ea84f"></a>SKW_ROOM_PUBLICATION_ERR_CONTEXT_NOT_INITED&#160;</td><td class="fielddoc"><p>Contextが初期化されていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a0b498e887e3aec4f33b9af46673869e8" name="ad4d1c119768dd5c368fde32d6a185fd8a0b498e887e3aec4f33b9af46673869e8"></a>SKW_ROOM_PUBLICATION_ERR_CONTEXT_NOT_SETUP&#160;</td><td class="fielddoc"><p>Contextがセットアップされていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a393dd3bbdc136b97340c4428a06e69e0" name="ad4d1c119768dd5c368fde32d6a185fd8a393dd3bbdc136b97340c4428a06e69e0"></a>SKW_ROOM_PUBLICATION_ERR_REQUEST_FAILED&#160;</td><td class="fielddoc"><p>リクエストの実行に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a4f6186b2acb9073240e0aea65a921cf7" name="ad4d1c119768dd5c368fde32d6a185fd8a4f6186b2acb9073240e0aea65a921cf7"></a>SKW_ROOM_PUBLICATION_ERR_MUTEX_UNLOCK_FAILED&#160;</td><td class="fielddoc"><p>Publication APIのアンロックに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8adca1da167ed301222039bee627a8f35d" name="ad4d1c119768dd5c368fde32d6a185fd8adca1da167ed301222039bee627a8f35d"></a>SKW_ROOM_PUBLICATION_ERR_CALLED_IN_HANDLER&#160;</td><td class="fielddoc"><p>イベントハンドラ内から呼ばれた </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8ae34dccf58f8c9e6ed422c888b5eb9821" name="ad4d1c119768dd5c368fde32d6a185fd8ae34dccf58f8c9e6ed422c888b5eb9821"></a>SKW_ROOM_PUBLICATION_ERR_SEND_FAILED&#160;</td><td class="fielddoc"><p>リクエストの送信に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a66555892fa93d5b4c2f8d3a212baa1e0" name="ad4d1c119768dd5c368fde32d6a185fd8a66555892fa93d5b4c2f8d3a212baa1e0"></a>SKW_ROOM_PUBLICATION_ERR_TIMEOUT&#160;</td><td class="fielddoc"><p>応答の受信がタイムアウトした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8ad9bff1d7db33678a1120798a0c3b67b5" name="ad4d1c119768dd5c368fde32d6a185fd8ad9bff1d7db33678a1120798a0c3b67b5"></a>SKW_ROOM_PUBLICATION_ERR_CONNECTION_CLOSED&#160;</td><td class="fielddoc"><p>応答待ちの間に接続が切断された </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8ad910b9ab68d55a11b52a5665ed9e4fea" name="ad4d1c119768dd5c368fde32d6a185fd8ad910b9ab68d55a11b52a5665ed9e4fea"></a>SKW_ROOM_PUBLICATION_ERR_RESPONSE_TOO_LARGE&#160;</td><td class="fielddoc"><p>応答が受信バッファのサイズを超過した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8aabd3a137656eeda1f533fc9afa5035c7" name="ad4d1c119768dd5c368fde32d6a185fd8aabd3a137656eeda1f533fc9afa5035c7"></a>SKW_ROOM_PUBLICATION_ERR_RESPONSE_PARSE_FAILED&#160;</td><td class="fielddoc"><p>応答の解析に失敗した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a1916098716c71fc458d3268892b6968d" name="ad4d1c119768dd5c368fde32d6a185fd8a1916098716c71fc458d3268892b6968d"></a>SKW_ROOM_PUBLICATION_ERR_NOT_JOINED&#160;</td><td class="fielddoc"><p>LocalPersonが存在しない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a34b8225ecbd8f1f6373cdf538396b666" name="ad4d1c119768dd5c368fde32d6a185fd8a34b8225ecbd8f1f6373cdf538396b666"></a>SKW_ROOM_PUBLICATION_ERR_CONTENT_TYPE_MISMATCH&#160;</td><td class="fielddoc"><p>Publicationのコンテンツ種別と送信APIが一致しない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a8753dd569828ebc9acfe902f9d058bfd" name="ad4d1c119768dd5c368fde32d6a185fd8a8753dd569828ebc9acfe902f9d058bfd"></a>SKW_ROOM_PUBLICATION_ERR_NOT_PUBLISHED&#160;</td><td class="fielddoc"><p>指定したPublicationをPublishしていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a354bba7654682c1a8e8c35e66f7c03ea" name="ad4d1c119768dd5c368fde32d6a185fd8a354bba7654682c1a8e8c35e66f7c03ea"></a>SKW_ROOM_PUBLICATION_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>不明なエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8ab0466e933aa907a949726f7cb440a148" name="ad4d1c119768dd5c368fde32d6a185fd8ab0466e933aa907a949726f7cb440a148"></a>SKW_ROOM_PUBLICATION_ERR_BAD_REQUEST&#160;</td><td class="fielddoc"><p>リクエストパラメータが不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a3469bfcda743598d83e1f8f6cd6cafc9" name="ad4d1c119768dd5c368fde32d6a185fd8a3469bfcda743598d83e1f8f6cd6cafc9"></a>SKW_ROOM_PUBLICATION_ERR_UNAUTHORIZED&#160;</td><td class="fielddoc"><p>AuthTokenが不正、もしくは有効期限切れ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8ae39ed9124d7b6c4333464344ee1b53e0" name="ad4d1c119768dd5c368fde32d6a185fd8ae39ed9124d7b6c4333464344ee1b53e0"></a>SKW_ROOM_PUBLICATION_ERR_FORBIDDEN&#160;</td><td class="fielddoc"><p>必要な権限が無い </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8adf315e0d36acea2d3545c0875679f35b" name="ad4d1c119768dd5c368fde32d6a185fd8adf315e0d36acea2d3545c0875679f35b"></a>SKW_ROOM_PUBLICATION_ERR_NOT_FOUND&#160;</td><td class="fielddoc"><p>リソースが見つからない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8afd11ef2b66519c6128e96387767403e7" name="ad4d1c119768dd5c368fde32d6a185fd8afd11ef2b66519c6128e96387767403e7"></a>SKW_ROOM_PUBLICATION_ERR_ALREADY_EXIST&#160;</td><td class="fielddoc"><p>すでに存在するリソースを作成しようとした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a43ee0c367cfbeb1d1f619e1d165c2626" name="ad4d1c119768dd5c368fde32d6a185fd8a43ee0c367cfbeb1d1f619e1d165c2626"></a>SKW_ROOM_PUBLICATION_ERR_TOO_LARGE&#160;</td><td class="fielddoc"><p>リクエストパラメータが大きすぎる </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a9a451750ae6e22947fe0d0d9d952d715" name="ad4d1c119768dd5c368fde32d6a185fd8a9a451750ae6e22947fe0d0d9d952d715"></a>SKW_ROOM_PUBLICATION_ERR_TOO_MANY_REQUESTS&#160;</td><td class="fielddoc"><p>レートリミット超過 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a90fb823f6fe884e70f10deddb70e8085" name="ad4d1c119768dd5c368fde32d6a185fd8a90fb823f6fe884e70f10deddb70e8085"></a>SKW_ROOM_PUBLICATION_ERR_SERVER_INTERNAL&#160;</td><td class="fielddoc"><p>サーバー内部エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad4d1c119768dd5c368fde32d6a185fd8a0769459b636a7902d8674ae066320c55" name="ad4d1c119768dd5c368fde32d6a185fd8a0769459b636a7902d8674ae066320c55"></a>SKW_ROOM_PUBLICATION_ERR_SERVER_BUSY&#160;</td><td class="fielddoc"><p>サーバーが過負荷で一時的に利用できない </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae0172dd4c5dae6a76a8733fab732c129" name="ae0172dd4c5dae6a76a8733fab732c129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0172dd4c5dae6a76a8733fab732c129">&#9670;&#160;</a></span>skw_room_publication_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae0172dd4c5dae6a76a8733fab732c129">skw_room_publication_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publicationの配信方式。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ae0172dd4c5dae6a76a8733fab732c129abed543ad2f602d5ee321a0768308013c" name="ae0172dd4c5dae6a76a8733fab732c129abed543ad2f602d5ee321a0768308013c"></a>SKW_ROOM_PUBLICATION_TYPE_P2P&#160;</td><td class="fielddoc"><p>P2P </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae0172dd4c5dae6a76a8733fab732c129a8e6852bfaa45062358c4f52cabfdf9d0" name="ae0172dd4c5dae6a76a8733fab732c129a8e6852bfaa45062358c4f52cabfdf9d0"></a>SKW_ROOM_PUBLICATION_TYPE_SFU&#160;</td><td class="fielddoc"><p>SFU </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a59a7cc19cb5516e6b548192f1a189fb0" name="a59a7cc19cb5516e6b548192f1a189fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a7cc19cb5516e6b548192f1a189fb0">&#9670;&#160;</a></span>skw_room_publication_register_handlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_register_handlers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__publication__handlers__t.html">skw_room_publication_handlers_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handlers</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publicationのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handlers</td><td>Publicationのイベント通知を受け取るハンドラのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a8fd6cb1a85cbdae635a86d4801dd78a1" name="a8fd6cb1a85cbdae635a86d4801dd78a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd6cb1a85cbdae635a86d4801dd78a1">&#9670;&#160;</a></span>skw_room_publication_send_audio_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_send_audio_frame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__publication__send__frame__params__t.html">skw_room_publication_send_frame_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublishしたAudioStreamへエンコード済みフレーム（Opus）を送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>送信パラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="ae63f2c0f043314c8b6cc7082d29184b2" name="ae63f2c0f043314c8b6cc7082d29184b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63f2c0f043314c8b6cc7082d29184b2">&#9670;&#160;</a></span>skw_room_publication_send_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_send_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__publication__send__data__params__t.html">skw_room_publication_send_data_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublishしたDataStreamへデータを送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>送信パラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a1e27564f84e19fd8668ddb9efe468d31" name="a1e27564f84e19fd8668ddb9efe468d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e27564f84e19fd8668ddb9efe468d31">&#9670;&#160;</a></span>skw_room_publication_send_video_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_send_video_frame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__publication__send__frame__params__t.html">skw_room_publication_send_frame_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublishしたVideoStreamへエンコード済みフレーム（H.264）を送信します。Streamが確立している全subscriberへ送信されます。 subscriberがいない場合は何も送信せずに成功を返します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>送信パラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="ad5a5e93b340d08a807c9332be1b62b81" name="ad5a5e93b340d08a807c9332be1b62b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a5e93b340d08a807c9332be1b62b81">&#9670;&#160;</a></span>skw_room_publication_unregister_handlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_unregister_handlers </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>登録済みのイベント通知ハンドラを解除します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a863e71c6d2d4cd9afc088f1aaf7c90e2" name="a863e71c6d2d4cd9afc088f1aaf7c90e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a863e71c6d2d4cd9afc088f1aaf7c90e2">&#9670;&#160;</a></span>skw_room_publication_update_metadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ad4d1c119768dd5c368fde32d6a185fd8">skw_room_publication_err_t</a> skw_room_publication_update_metadata </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__publication__update__metadata__params__t.html">skw_room_publication_update_metadata_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublicationのMetadataを更新します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>更新パラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="publication_8h.html">publication.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['skw_5fauth_5ftoken_5ft_0',['skw_auth_token_t',['../structskw__auth__token__t.html',1,'']]],
+  ['skw_5fcontext_5fsetup_5foptions_5ft_1',['skw_context_setup_options_t',['../structskw__context__setup__options__t.html',1,'']]],
+  ['skw_5flogger_5fhandlers_5ft_2',['skw_logger_handlers_t',['../structskw__logger__handlers__t.html',1,'']]],
+  ['skw_5froom_5fcreate_5fparams_5ft_3',['skw_room_create_params_t',['../structskw__room__create__params__t.html',1,'']]],
+  ['skw_5froom_5fdata_5ffield_5ft_4',['skw_room_data_field_t',['../structskw__room__data__field__t.html',1,'']]],
+  ['skw_5froom_5ffind_5fby_5fid_5fparams_5ft_5',['skw_room_find_by_id_params_t',['../structskw__room__find__by__id__params__t.html',1,'']]],
+  ['skw_5froom_5ffind_5fby_5fname_5fparams_5ft_6',['skw_room_find_by_name_params_t',['../structskw__room__find__by__name__params__t.html',1,'']]],
+  ['skw_5froom_5ffind_5for_5fcreate_5fparams_5ft_7',['skw_room_find_or_create_params_t',['../structskw__room__find__or__create__params__t.html',1,'']]],
+  ['skw_5froom_5fhandlers_5ft_8',['skw_room_handlers_t',['../structskw__room__handlers__t.html',1,'']]],
+  ['skw_5froom_5fjoin_5fparams_5ft_9',['skw_room_join_params_t',['../structskw__room__join__params__t.html',1,'']]],
+  ['skw_5froom_5flocal_5fperson_5fpublish_5fparams_5ft_10',['skw_room_local_person_publish_params_t',['../structskw__room__local__person__publish__params__t.html',1,'']]],
+  ['skw_5froom_5flocal_5fperson_5fsubscribe_5fparams_5ft_11',['skw_room_local_person_subscribe_params_t',['../structskw__room__local__person__subscribe__params__t.html',1,'']]],
+  ['skw_5froom_5flocal_5fperson_5funpublish_5fparams_5ft_12',['skw_room_local_person_unpublish_params_t',['../structskw__room__local__person__unpublish__params__t.html',1,'']]],
+  ['skw_5froom_5flocal_5fperson_5funsubscribe_5fparams_5ft_13',['skw_room_local_person_unsubscribe_params_t',['../structskw__room__local__person__unsubscribe__params__t.html',1,'']]],
+  ['skw_5froom_5fmember_5fdata_5ffield_5ft_14',['skw_room_member_data_field_t',['../structskw__room__member__data__field__t.html',1,'']]],
+  ['skw_5froom_5fmember_5fleave_5fparams_5ft_15',['skw_room_member_leave_params_t',['../structskw__room__member__leave__params__t.html',1,'']]],
+  ['skw_5froom_5fmember_5fupdate_5fmetadata_5fparams_5ft_16',['skw_room_member_update_metadata_params_t',['../structskw__room__member__update__metadata__params__t.html',1,'']]],
+  ['skw_5froom_5fpublication_5fdata_5ffield_5ft_17',['skw_room_publication_data_field_t',['../structskw__room__publication__data__field__t.html',1,'']]],
+  ['skw_5froom_5fpublication_5fhandlers_5ft_18',['skw_room_publication_handlers_t',['../structskw__room__publication__handlers__t.html',1,'']]],
+  ['skw_5froom_5fpublication_5fsend_5fdata_5fparams_5ft_19',['skw_room_publication_send_data_params_t',['../structskw__room__publication__send__data__params__t.html',1,'']]],
+  ['skw_5froom_5fpublication_5fsend_5fframe_5fparams_5ft_20',['skw_room_publication_send_frame_params_t',['../structskw__room__publication__send__frame__params__t.html',1,'']]],
+  ['skw_5froom_5fpublication_5fupdate_5fmetadata_5fparams_5ft_21',['skw_room_publication_update_metadata_params_t',['../structskw__room__publication__update__metadata__params__t.html',1,'']]],
+  ['skw_5froom_5fsubscription_5fdata_5ffield_5ft_22',['skw_room_subscription_data_field_t',['../structskw__room__subscription__data__field__t.html',1,'']]],
+  ['skw_5froom_5fsubscription_5fhandlers_5ft_23',['skw_room_subscription_handlers_t',['../structskw__room__subscription__handlers__t.html',1,'']]],
+  ['skw_5froom_5fupdate_5fmetadata_5fparams_5ft_24',['skw_room_update_metadata_params_t',['../structskw__room__update__metadata__params__t.html',1,'']]]
+];

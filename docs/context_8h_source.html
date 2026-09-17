@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: context.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('context_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">context.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="context_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// © NTT DOCOMO BUSINESS, Inc. All Rights Reserved.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="auth__token_8h.html">auth_token.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="context_8h.html#aa5c92d72620133933c3a78fbdd8c32f8">   18</a></span><span class="preprocessor">#define SKW_CONTEXT_SUPPRESS_LOG_TAGS {&quot;AGENT&quot;, &quot;BUF_MNGR&quot;, &quot;PEER_DEF&quot;, &quot;DTLS&quot;}</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">   21</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68">   22</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68">SKW_CONTEXT_OK</a>                           = 0,   </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489">   23</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489">SKW_CONTEXT_ERR_NULL_ARGS</a>                = 1,   </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6">   24</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6">SKW_CONTEXT_ERR_NOT_INITED</a>               = 2,   </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d">   25</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d">SKW_CONTEXT_ERR_ALREADY_INITED</a>           = 3,   </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc">   26</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc">SKW_CONTEXT_ERR_DISCONNECT_FAILED</a>        = 4,   </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36">   27</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36">SKW_CONTEXT_ERR_NOT_SETUP</a>                = 5,   </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267">   28</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267">SKW_CONTEXT_ERR_ALREADY_SETUP</a>            = 6,   </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b">   29</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b">SKW_CONTEXT_ERR_API_TIMEOUT</a>              = 7,   </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82">   30</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82">SKW_CONTEXT_ERR_MUTEX_UNLOCK_FAILED</a>      = 8,   </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70">   31</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70">SKW_CONTEXT_ERR_APP_ID_TOO_LONG</a>          = 9,   </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f">   32</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f">SKW_CONTEXT_ERR_INVALID_TOKEN</a>            = 10,  </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb">   33</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb">SKW_CONTEXT_ERR_CALLED_IN_HANDLER</a>        = 11,  </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62">   34</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62">SKW_CONTEXT_ERR_APP_ID_MISMATCH</a>          = 12,  </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143">   35</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143">SKW_CONTEXT_ERR_SEND_FAILED</a>              = 13,  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e">   36</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e">SKW_CONTEXT_ERR_TIMEOUT</a>                  = 14,  </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d">   37</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d">SKW_CONTEXT_ERR_CONNECTION_CLOSED</a>        = 15,  </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5">   38</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5">SKW_CONTEXT_ERR_RESPONSE_TOO_LARGE</a>       = 16,  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140">   39</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140">SKW_CONTEXT_ERR_RESPONSE_PARSE_FAILED</a>    = 17,  </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512">   40</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512">SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE</a>     = 18,  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69">   41</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69">SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED</a>   = 19,  </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631">   42</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631">SKW_CONTEXT_ERR_SIGNALING_FAILED</a>         = 20,  </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924">   43</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924">SKW_CONTEXT_ERR_UNKNOWN</a>                  = 99,  </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189">   44</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189">SKW_CONTEXT_ERR_BAD_REQUEST</a>              = 400, </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05">   45</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05">SKW_CONTEXT_ERR_UNAUTHORIZED</a>             = 401, </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d">   46</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d">SKW_CONTEXT_ERR_FORBIDDEN</a>                = 403, </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685">   47</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685">SKW_CONTEXT_ERR_NOT_FOUND</a>                = 404, </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c">   48</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c">SKW_CONTEXT_ERR_ALREADY_EXIST</a>            = 409, </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583">   49</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583">SKW_CONTEXT_ERR_TOO_LARGE</a>                = 413, </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39">   50</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39">SKW_CONTEXT_ERR_TOO_MANY_REQUESTS</a>        = 429, </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2">   51</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2">SKW_CONTEXT_ERR_SERVER_INTERNAL</a>          = 500, </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729">   52</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729">SKW_CONTEXT_ERR_SERVER_BUSY</a>              = 503, </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef">   53</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef">SKW_CONTEXT_FATAL_ALLOCATE_FAILED</a>        = -1,  </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b">   54</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b">SKW_CONTEXT_FATAL_CLEANUP_FAILED</a>         = -2,  </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786">   55</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786">SKW_CONTEXT_FATAL_SETUP_FAILED</a>           = -3,  </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b">   56</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b">SKW_CONTEXT_FATAL_CONNECT_FAILED</a>         = -4,  </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18">   57</a></span>    <a class="code hl_enumvalue" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18">SKW_CONTEXT_FATAL_INIT_FAILED</a>            = -5,  </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <a class="code hl_enumeration" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a>;</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structskw__context__setup__options__t.html">   61</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structskw__context__setup__options__t.html#a75fd403112d7f7b052d2950a6ccb1e88">   62</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structskw__context__setup__options__t.html#a75fd403112d7f7b052d2950a6ccb1e88">disable_log_suppression</a>; </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structskw__context__setup__options__t.html#aaa60844a5ee423efb6b9528101589cdd">   66</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="structskw__context__setup__options__t.html#aaa60844a5ee423efb6b9528101589cdd">enable_video_subscribe</a>; </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structskw__context__setup__options__t.html#ae8d5984a3639e28beda4597a987bbf7d">   67</a></span>    } experimental;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <a class="code hl_struct" href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a>;</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="context_8h.html#a1155c52153f3afc8287f1f944b066c95">   72</a></span><a class="code hl_enumeration" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> <a class="code hl_function" href="context_8h.html#a1155c52153f3afc8287f1f944b066c95">skw_context_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="context_8h.html#a8be37a4feddb1d09966e831fb99275d0">   79</a></span><a class="code hl_enumeration" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> <a class="code hl_function" href="context_8h.html#a8be37a4feddb1d09966e831fb99275d0">skw_context_setup</a>(<a class="code hl_struct" href="structskw__auth__token__t.html">skw_auth_token_t</a>* auth_token, <a class="code hl_struct" href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a>* options);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="context_8h.html#ae3d2d4250c5998b356d44973b3e27779">   83</a></span><a class="code hl_enumeration" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> <a class="code hl_function" href="context_8h.html#ae3d2d4250c5998b356d44973b3e27779">skw_context_dispose</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="context_8h.html#a9a0cb7b77a6608f8df1ef0298442e836">   88</a></span><a class="code hl_enumeration" href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> <a class="code hl_function" href="context_8h.html#a9a0cb7b77a6608f8df1ef0298442e836">skw_context_update_auth_token</a>(<a class="code hl_struct" href="structskw__auth__token__t.html">skw_auth_token_t</a>* auth_token);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aauth__token_8h_html"><div class="ttname"><a href="auth__token_8h.html">auth_token.h</a></div><div class="ttdoc">開発用AuthTokenの生成。</div></div>
+<div class="ttc" id="acontext_8h_html_a1155c52153f3afc8287f1f944b066c95"><div class="ttname"><a href="context_8h.html#a1155c52153f3afc8287f1f944b066c95">skw_context_init</a></div><div class="ttdeci">skw_context_err_t skw_context_init(void)</div><div class="ttdoc">Contextを初期化します。他のAPIを利用する前に最初に一度呼び出す必要があります。</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a></div><div class="ttdeci">skw_context_err_t</div><div class="ttdoc">Context APIのエラーコード。</div><div class="ttdef"><b>Definition</b> context.h:21</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d">SKW_CONTEXT_ERR_CONNECTION_CLOSED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_CONNECTION_CLOSED</div><div class="ttdoc">応答待ちの間に接続が切断された</div><div class="ttdef"><b>Definition</b> context.h:37</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18">SKW_CONTEXT_FATAL_INIT_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_FATAL_INIT_FAILED</div><div class="ttdoc">致命的エラー: 初期化に失敗</div><div class="ttdef"><b>Definition</b> context.h:57</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc">SKW_CONTEXT_ERR_DISCONNECT_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_DISCONNECT_FAILED</div><div class="ttdoc">サーバーからの切断に失敗</div><div class="ttdef"><b>Definition</b> context.h:26</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e">SKW_CONTEXT_ERR_TIMEOUT</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_TIMEOUT</div><div class="ttdoc">応答の受信がタイムアウトした</div><div class="ttdef"><b>Definition</b> context.h:36</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924">SKW_CONTEXT_ERR_UNKNOWN</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_UNKNOWN</div><div class="ttdoc">不明なエラー</div><div class="ttdef"><b>Definition</b> context.h:43</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d">SKW_CONTEXT_ERR_ALREADY_INITED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_ALREADY_INITED</div><div class="ttdoc">Contextがすでに初期化済み</div><div class="ttdef"><b>Definition</b> context.h:25</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2">SKW_CONTEXT_ERR_SERVER_INTERNAL</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SERVER_INTERNAL</div><div class="ttdoc">サーバー内部エラー</div><div class="ttdef"><b>Definition</b> context.h:51</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef">SKW_CONTEXT_FATAL_ALLOCATE_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_FATAL_ALLOCATE_FAILED</div><div class="ttdoc">致命的エラー: メモリ確保に失敗</div><div class="ttdef"><b>Definition</b> context.h:53</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189">SKW_CONTEXT_ERR_BAD_REQUEST</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_BAD_REQUEST</div><div class="ttdoc">不正なリクエスト</div><div class="ttdef"><b>Definition</b> context.h:44</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62">SKW_CONTEXT_ERR_APP_ID_MISMATCH</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_APP_ID_MISMATCH</div><div class="ttdoc">AuthToken内のappIdが現在のappIdと一致しない</div><div class="ttdef"><b>Definition</b> context.h:34</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6">SKW_CONTEXT_ERR_NOT_INITED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_NOT_INITED</div><div class="ttdoc">Contextが初期化されていない</div><div class="ttdef"><b>Definition</b> context.h:24</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729">SKW_CONTEXT_ERR_SERVER_BUSY</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SERVER_BUSY</div><div class="ttdoc">サーバーが過負荷で一時的に利用できない</div><div class="ttdef"><b>Definition</b> context.h:52</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68">SKW_CONTEXT_OK</a></div><div class="ttdeci">@ SKW_CONTEXT_OK</div><div class="ttdoc">正常終了</div><div class="ttdef"><b>Definition</b> context.h:22</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c">SKW_CONTEXT_ERR_ALREADY_EXIST</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_ALREADY_EXIST</div><div class="ttdoc">すでに存在するリソースを作成しようとした</div><div class="ttdef"><b>Definition</b> context.h:48</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05">SKW_CONTEXT_ERR_UNAUTHORIZED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_UNAUTHORIZED</div><div class="ttdoc">AuthTokenが不正、もしくは有効期限切れ</div><div class="ttdef"><b>Definition</b> context.h:45</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82">SKW_CONTEXT_ERR_MUTEX_UNLOCK_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_MUTEX_UNLOCK_FAILED</div><div class="ttdoc">Context APIのアンロックに失敗</div><div class="ttdef"><b>Definition</b> context.h:30</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69">SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED</div><div class="ttdoc">シグナリングが切断された（復帰はdispose後のsetup/join）</div><div class="ttdef"><b>Definition</b> context.h:41</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143">SKW_CONTEXT_ERR_SEND_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SEND_FAILED</div><div class="ttdoc">リクエストの送信に失敗</div><div class="ttdef"><b>Definition</b> context.h:35</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f">SKW_CONTEXT_ERR_INVALID_TOKEN</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_INVALID_TOKEN</div><div class="ttdoc">AuthTokenが不正</div><div class="ttdef"><b>Definition</b> context.h:32</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685">SKW_CONTEXT_ERR_NOT_FOUND</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_NOT_FOUND</div><div class="ttdoc">リソースが見つからない</div><div class="ttdef"><b>Definition</b> context.h:47</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489">SKW_CONTEXT_ERR_NULL_ARGS</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_NULL_ARGS</div><div class="ttdoc">引数がNULL</div><div class="ttdef"><b>Definition</b> context.h:23</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d">SKW_CONTEXT_ERR_FORBIDDEN</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_FORBIDDEN</div><div class="ttdoc">必要な権限が無い</div><div class="ttdef"><b>Definition</b> context.h:46</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583">SKW_CONTEXT_ERR_TOO_LARGE</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_TOO_LARGE</div><div class="ttdoc">リクエストが大きすぎる</div><div class="ttdef"><b>Definition</b> context.h:49</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b">SKW_CONTEXT_FATAL_CONNECT_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_FATAL_CONNECT_FAILED</div><div class="ttdoc">致命的エラー: サーバーへの接続に失敗</div><div class="ttdef"><b>Definition</b> context.h:56</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39">SKW_CONTEXT_ERR_TOO_MANY_REQUESTS</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_TOO_MANY_REQUESTS</div><div class="ttdoc">レートリミット超過</div><div class="ttdef"><b>Definition</b> context.h:50</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b">SKW_CONTEXT_ERR_API_TIMEOUT</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_API_TIMEOUT</div><div class="ttdoc">Context APIがタイムアウトした</div><div class="ttdef"><b>Definition</b> context.h:29</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631">SKW_CONTEXT_ERR_SIGNALING_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SIGNALING_FAILED</div><div class="ttdoc">シグナリングの操作に失敗</div><div class="ttdef"><b>Definition</b> context.h:42</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70">SKW_CONTEXT_ERR_APP_ID_TOO_LONG</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_APP_ID_TOO_LONG</div><div class="ttdoc">AppIDが長すぎる</div><div class="ttdef"><b>Definition</b> context.h:31</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786">SKW_CONTEXT_FATAL_SETUP_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_FATAL_SETUP_FAILED</div><div class="ttdoc">致命的エラー: セットアップに失敗</div><div class="ttdef"><b>Definition</b> context.h:55</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b">SKW_CONTEXT_FATAL_CLEANUP_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_FATAL_CLEANUP_FAILED</div><div class="ttdoc">致命的エラー: クリーンアップに失敗</div><div class="ttdef"><b>Definition</b> context.h:54</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140">SKW_CONTEXT_ERR_RESPONSE_PARSE_FAILED</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_RESPONSE_PARSE_FAILED</div><div class="ttdoc">応答の解析に失敗した</div><div class="ttdef"><b>Definition</b> context.h:39</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267">SKW_CONTEXT_ERR_ALREADY_SETUP</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_ALREADY_SETUP</div><div class="ttdoc">Contextがすでにセットアップ済み</div><div class="ttdef"><b>Definition</b> context.h:28</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb">SKW_CONTEXT_ERR_CALLED_IN_HANDLER</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_CALLED_IN_HANDLER</div><div class="ttdoc">イベントハンドラ内から呼ばれた</div><div class="ttdef"><b>Definition</b> context.h:33</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36">SKW_CONTEXT_ERR_NOT_SETUP</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_NOT_SETUP</div><div class="ttdoc">Contextがセットアップされていない</div><div class="ttdef"><b>Definition</b> context.h:27</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512">SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE</div><div class="ttdoc">シグナリングのセッションが確立していない</div><div class="ttdef"><b>Definition</b> context.h:40</div></div>
+<div class="ttc" id="acontext_8h_html_a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5"><div class="ttname"><a href="context_8h.html#a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5">SKW_CONTEXT_ERR_RESPONSE_TOO_LARGE</a></div><div class="ttdeci">@ SKW_CONTEXT_ERR_RESPONSE_TOO_LARGE</div><div class="ttdoc">応答が受信バッファのサイズを超過した</div><div class="ttdef"><b>Definition</b> context.h:38</div></div>
+<div class="ttc" id="acontext_8h_html_a8be37a4feddb1d09966e831fb99275d0"><div class="ttname"><a href="context_8h.html#a8be37a4feddb1d09966e831fb99275d0">skw_context_setup</a></div><div class="ttdeci">skw_context_err_t skw_context_setup(skw_auth_token_t *auth_token, skw_context_setup_options_t *options)</div><div class="ttdoc">Contextを初期化し、SkyWayサーバーへの接続を確立します。 disable_log_suppressionを指定しない場合、SKW_CONTEXT_SUPPRESS_LOG_TAGSのタグの出...</div></div>
+<div class="ttc" id="acontext_8h_html_a9a0cb7b77a6608f8df1ef0298442e836"><div class="ttname"><a href="context_8h.html#a9a0cb7b77a6608f8df1ef0298442e836">skw_context_update_auth_token</a></div><div class="ttdeci">skw_context_err_t skw_context_update_auth_token(skw_auth_token_t *auth_token)</div><div class="ttdoc">認証に使用するAuthTokenを新しいAuthTokenへ更新します。</div></div>
+<div class="ttc" id="acontext_8h_html_ae3d2d4250c5998b356d44973b3e27779"><div class="ttname"><a href="context_8h.html#ae3d2d4250c5998b356d44973b3e27779">skw_context_dispose</a></div><div class="ttdeci">skw_context_err_t skw_context_dispose(void)</div><div class="ttdoc">SkyWayサーバーとの通信を切断、確保したリソースを解放します。</div></div>
+<div class="ttc" id="astructskw__auth__token__t_html"><div class="ttname"><a href="structskw__auth__token__t.html">skw_auth_token_t</a></div><div class="ttdoc">生成したAuthTokenを保持する構造体。</div><div class="ttdef"><b>Definition</b> auth_token.h:28</div></div>
+<div class="ttc" id="astructskw__context__setup__options__t_html"><div class="ttname"><a href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a></div><div class="ttdoc">Contextの初期化時に使用するオプション。</div><div class="ttdef"><b>Definition</b> context.h:61</div></div>
+<div class="ttc" id="astructskw__context__setup__options__t_html_a75fd403112d7f7b052d2950a6ccb1e88"><div class="ttname"><a href="structskw__context__setup__options__t.html#a75fd403112d7f7b052d2950a6ccb1e88">skw_context_setup_options_t::disable_log_suppression</a></div><div class="ttdeci">bool disable_log_suppression</div><div class="ttdoc">SKW_CONTEXT_SUPPRESS_LOG_TAGSのタグの出力を抑制しません。</div><div class="ttdef"><b>Definition</b> context.h:62</div></div>
+<div class="ttc" id="astructskw__context__setup__options__t_html_aaa60844a5ee423efb6b9528101589cdd"><div class="ttname"><a href="structskw__context__setup__options__t.html#aaa60844a5ee423efb6b9528101589cdd">skw_context_setup_options_t::enable_video_subscribe</a></div><div class="ttdeci">bool enable_video_subscribe</div><div class="ttdoc">VideoのSubscribeを許可します。Videoの受信は通信処理の負荷が高く注意が必要です。</div><div class="ttdef"><b>Definition</b> context.h:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="context_8h.html">context.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

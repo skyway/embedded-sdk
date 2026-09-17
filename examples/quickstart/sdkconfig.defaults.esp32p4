@@ -1,0 +1,10 @@
+# ESP32-P4向けの設定。
+# ESP32-P4はWi-Fiを内蔵しないため、Wi-Fiコプロセッサ（ESP32-C6等）をesp_hosted経由で使う。
+# コプロセッサとの接続方式やピン配置はボードごとに異なる。既定値で接続できない場合は
+# menuconfigの「Component config > ESP-Hosted config」でボードの回路に合わせること。
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="16MB"
+CONFIG_IDF_EXPERIMENTAL_FEATURES=y
+CONFIG_SPIRAM_SPEED_200M=y
+CONFIG_CACHE_L2_CACHE_128KB=y
+CONFIG_CACHE_L2_CACHE_LINE_64B=y

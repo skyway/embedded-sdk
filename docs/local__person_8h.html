@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: local_person.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('local__person_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">local_person.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>自分自身によるPublish・Subscribe。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="publication_8h_source.html">publication.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="subscription_8h_source.html">subscription.h</a>&quot;</code><br />
+</div>
+<p><a href="local__person_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:skw_5Froom_5Flocal_5Fperson_5Fpublish_5Fparams_5Ft" id="r_skw_5Froom_5Flocal_5Fperson_5Fpublish_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__local__person__publish__params__t.html">skw_room_local_person_publish_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_publishのパラメータ。  <a href="structskw__room__local__person__publish__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Flocal_5Fperson_5Funpublish_5Fparams_5Ft" id="r_skw_5Froom_5Flocal_5Fperson_5Funpublish_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__local__person__unpublish__params__t.html">skw_room_local_person_unpublish_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_unpublishのパラメータ。  <a href="structskw__room__local__person__unpublish__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Flocal_5Fperson_5Fsubscribe_5Fparams_5Ft" id="r_skw_5Froom_5Flocal_5Fperson_5Fsubscribe_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__local__person__subscribe__params__t.html">skw_room_local_person_subscribe_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_subscribeのパラメータ。  <a href="structskw__room__local__person__subscribe__params__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Flocal_5Fperson_5Funsubscribe_5Fparams_5Ft" id="r_skw_5Froom_5Flocal_5Fperson_5Funsubscribe_5Fparams_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__local__person__unsubscribe__params__t.html">skw_room_local_person_unsubscribe_params_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_unsubscribeのパラメータ。  <a href="structskw__room__local__person__unsubscribe__params__t.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a5f57eda04900a6a5e4120755350cd842" id="r_a5f57eda04900a6a5e4120755350cd842"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f57eda04900a6a5e4120755350cd842">SKW_ROOM_LOCAL_PERSON_PUBLISH_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a5f57eda04900a6a5e4120755350cd842"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_publish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+<tr class="memitem:adc8940174d95cb45b62fe9bf56291db0" id="r_adc8940174d95cb45b62fe9bf56291db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc8940174d95cb45b62fe9bf56291db0">SKW_ROOM_LOCAL_PERSON_UNPUBLISH_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:adc8940174d95cb45b62fe9bf56291db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_unpublish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+<tr class="memitem:a2a71206bb2969dc931103f86659e631f" id="r_a2a71206bb2969dc931103f86659e631f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a71206bb2969dc931103f86659e631f">SKW_ROOM_LOCAL_PERSON_SUBSCRIBE_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a2a71206bb2969dc931103f86659e631f"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_subscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+<tr class="memitem:a37d2330b36d3bfef737b09c41bf550db" id="r_a37d2330b36d3bfef737b09c41bf550db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37d2330b36d3bfef737b09c41bf550db">SKW_ROOM_LOCAL_PERSON_UNSUBSCRIBE_PARAMS_INIT</a>(...)</td></tr>
+<tr class="memdesc:a37d2330b36d3bfef737b09c41bf550db"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_room_local_person_unsubscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:aff82659b650c4010df859f9144bb58a2" id="r_aff82659b650c4010df859f9144bb58a2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a> { <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a9d84ba5fb3d10898490f640007289785">SKW_ROOM_LOCAL_PERSON_OK</a> = 0
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a83f2271aad49196b0775ffde0c815c26">SKW_ROOM_LOCAL_PERSON_ERR_NULL_ARGS</a> = 1
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab02026ec43bec48772753714feab7802">SKW_ROOM_LOCAL_PERSON_ERR_INVALID_ARGS</a> = 2
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a7bee11bcfae21b8f8cc215ae60937bf9">SKW_ROOM_LOCAL_PERSON_ERR_CONTEXT_NOT_INITED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2aed110a11cd81341e4c4f1c051019be76">SKW_ROOM_LOCAL_PERSON_ERR_CONTEXT_NOT_SETUP</a> = 4
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ae114d640913c3ac173e55ec2c828b5f9">SKW_ROOM_LOCAL_PERSON_ERR_REQUEST_FAILED</a> = 5
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a7d6c14d2eb5893084191dca04792ac23">SKW_ROOM_LOCAL_PERSON_ERR_MUTEX_UNLOCK_FAILED</a> = 6
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2aad5e1ba013ed4325177ff0df75c47f7e">SKW_ROOM_LOCAL_PERSON_ERR_CALLED_IN_HANDLER</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a20caae42dc766d334934f04c88b10c74">SKW_ROOM_LOCAL_PERSON_ERR_SEND_FAILED</a> = 8
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a2c9cd2377435af800ac78f7789cc15be">SKW_ROOM_LOCAL_PERSON_ERR_TIMEOUT</a> = 9
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2abb4caecbca2e8097adfd1ea6f603a775">SKW_ROOM_LOCAL_PERSON_ERR_CONNECTION_CLOSED</a> = 10
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ac9f0cdd8b0f35017325af91c4176d5fa">SKW_ROOM_LOCAL_PERSON_ERR_RESPONSE_TOO_LARGE</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2afe1aa09e267d99140d7f8eeb77e2b7da">SKW_ROOM_LOCAL_PERSON_ERR_RESPONSE_PARSE_FAILED</a> = 12
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ac08fe5fdda9700e8652575346477d03f">SKW_ROOM_LOCAL_PERSON_ERR_PUBLICATION_LIMIT</a> = 13
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a93f981b17a63c8e1653e199364361892">SKW_ROOM_LOCAL_PERSON_ERR_NOT_JOINED</a> = 14
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f">SKW_ROOM_LOCAL_PERSON_ERR_STREAM_FAILED</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347">SKW_ROOM_LOCAL_PERSON_ERR_VIDEO_SUBSCRIBE_DISABLED</a> = 16
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9">SKW_ROOM_LOCAL_PERSON_ERR_NOT_SUPPORTED</a> = 90
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ae72106e89a11450268f7327f81183441">SKW_ROOM_LOCAL_PERSON_ERR_UNKNOWN</a> = 99
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a06310bc853198d018e07a953c4ec6c06">SKW_ROOM_LOCAL_PERSON_ERR_BAD_REQUEST</a> = 400
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a0b07e026c37f2ec819ed09d3c19f8873">SKW_ROOM_LOCAL_PERSON_ERR_UNAUTHORIZED</a> = 401
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab9a880c477ee9192ec5efbd8f17a3656">SKW_ROOM_LOCAL_PERSON_ERR_FORBIDDEN</a> = 403
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a00b1a4d310ef02a1b488958dad8d053d">SKW_ROOM_LOCAL_PERSON_ERR_NOT_FOUND</a> = 404
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab2d9a028cc8adbbfe558e82f7b7adde2">SKW_ROOM_LOCAL_PERSON_ERR_ALREADY_EXIST</a> = 409
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a6512d8855f9697134867a13b9797c68c">SKW_ROOM_LOCAL_PERSON_ERR_TOO_LARGE</a> = 413
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab1e25ea37e23b2d90469aa7cd08183ea">SKW_ROOM_LOCAL_PERSON_ERR_TOO_MANY_REQUESTS</a> = 429
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2aad91160a51949cfcfb4765432889cd5b">SKW_ROOM_LOCAL_PERSON_ERR_SERVER_INTERNAL</a> = 500
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a848f638e0ffd19f66486ffaaa42a0690">SKW_ROOM_LOCAL_PERSON_ERR_SERVER_BUSY</a> = 503
+<br />
+ }</td></tr>
+<tr class="memdesc:aff82659b650c4010df859f9144bb58a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">LocalPerson APIのエラーコード。  <a href="#aff82659b650c4010df859f9144bb58a2">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ab45af67046952fa0733ab759b59cde26" id="r_ab45af67046952fa0733ab759b59cde26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab45af67046952fa0733ab759b59cde26">skw_room_local_person_publish</a> (const <a class="el" href="structskw__room__local__person__publish__params__t.html">skw_room_local_person_publish_params_t</a> *params, <a class="el" href="structskw__room__publication__data__field__t.html">skw_room_publication_data_field_t</a> *data_fields)</td></tr>
+<tr class="memdesc:ab45af67046952fa0733ab759b59cde26"><td class="mdescLeft">&#160;</td><td class="mdescRight">StreamをPublishします。  <br /></td></tr>
+<tr class="memitem:a3955460f741459043387fcb101393d90" id="r_a3955460f741459043387fcb101393d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3955460f741459043387fcb101393d90">skw_room_local_person_unpublish</a> (const <a class="el" href="structskw__room__local__person__unpublish__params__t.html">skw_room_local_person_unpublish_params_t</a> *params)</td></tr>
+<tr class="memdesc:a3955460f741459043387fcb101393d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublishしているStreamをUnpublishします。  <br /></td></tr>
+<tr class="memitem:a3ebb4b2b59014c3c8b4173313bb7e7af" id="r_a3ebb4b2b59014c3c8b4173313bb7e7af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ebb4b2b59014c3c8b4173313bb7e7af">skw_room_local_person_subscribe</a> (const <a class="el" href="structskw__room__local__person__subscribe__params__t.html">skw_room_local_person_subscribe_params_t</a> *params, <a class="el" href="structskw__room__subscription__data__field__t.html">skw_room_subscription_data_field_t</a> *data_fields)</td></tr>
+<tr class="memdesc:a3ebb4b2b59014c3c8b4173313bb7e7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">PublicationをSubscribeし、Streamが利用可能になるまでブロックします（最大60秒）。 タイムアウト・確立失敗時はSubscriptionを自動でUnsubscribeします。  <br /></td></tr>
+<tr class="memitem:a630c3137730e32ab117cc929af98b052" id="r_a630c3137730e32ab117cc929af98b052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630c3137730e32ab117cc929af98b052">skw_room_local_person_unsubscribe</a> (const <a class="el" href="structskw__room__local__person__unsubscribe__params__t.html">skw_room_local_person_unsubscribe_params_t</a> *params)</td></tr>
+<tr class="memdesc:a630c3137730e32ab117cc929af98b052"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscribeしているStreamをUnsubscribeします。  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>自分自身によるPublish・Subscribe。 </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a5f57eda04900a6a5e4120755350cd842" name="a5f57eda04900a6a5e4120755350cd842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f57eda04900a6a5e4120755350cd842">&#9670;&#160;</a></span>SKW_ROOM_LOCAL_PERSON_PUBLISH_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_LOCAL_PERSON_PUBLISH_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_local_person_publish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a id="a2a71206bb2969dc931103f86659e631f" name="a2a71206bb2969dc931103f86659e631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a71206bb2969dc931103f86659e631f">&#9670;&#160;</a></span>SKW_ROOM_LOCAL_PERSON_SUBSCRIBE_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_LOCAL_PERSON_SUBSCRIBE_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_local_person_subscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a id="adc8940174d95cb45b62fe9bf56291db0" name="adc8940174d95cb45b62fe9bf56291db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8940174d95cb45b62fe9bf56291db0">&#9670;&#160;</a></span>SKW_ROOM_LOCAL_PERSON_UNPUBLISH_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_LOCAL_PERSON_UNPUBLISH_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_local_person_unpublish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a id="a37d2330b36d3bfef737b09c41bf550db" name="a37d2330b36d3bfef737b09c41bf550db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d2330b36d3bfef737b09c41bf550db">&#9670;&#160;</a></span>SKW_ROOM_LOCAL_PERSON_UNSUBSCRIBE_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SKW_ROOM_LOCAL_PERSON_UNSUBSCRIBE_PARAMS_INIT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{__VA_ARGS__}</div>
+</div><!-- fragment -->
+<p>skw_room_local_person_unsubscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。 </p>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="aff82659b650c4010df859f9144bb58a2" name="aff82659b650c4010df859f9144bb58a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff82659b650c4010df859f9144bb58a2">&#9670;&#160;</a></span>skw_room_local_person_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LocalPerson APIのエラーコード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a9d84ba5fb3d10898490f640007289785" name="aff82659b650c4010df859f9144bb58a2a9d84ba5fb3d10898490f640007289785"></a>SKW_ROOM_LOCAL_PERSON_OK&#160;</td><td class="fielddoc"><p>正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a83f2271aad49196b0775ffde0c815c26" name="aff82659b650c4010df859f9144bb58a2a83f2271aad49196b0775ffde0c815c26"></a>SKW_ROOM_LOCAL_PERSON_ERR_NULL_ARGS&#160;</td><td class="fielddoc"><p>引数がNULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ab02026ec43bec48772753714feab7802" name="aff82659b650c4010df859f9144bb58a2ab02026ec43bec48772753714feab7802"></a>SKW_ROOM_LOCAL_PERSON_ERR_INVALID_ARGS&#160;</td><td class="fielddoc"><p>引数の値が不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a7bee11bcfae21b8f8cc215ae60937bf9" name="aff82659b650c4010df859f9144bb58a2a7bee11bcfae21b8f8cc215ae60937bf9"></a>SKW_ROOM_LOCAL_PERSON_ERR_CONTEXT_NOT_INITED&#160;</td><td class="fielddoc"><p>Contextが初期化されていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2aed110a11cd81341e4c4f1c051019be76" name="aff82659b650c4010df859f9144bb58a2aed110a11cd81341e4c4f1c051019be76"></a>SKW_ROOM_LOCAL_PERSON_ERR_CONTEXT_NOT_SETUP&#160;</td><td class="fielddoc"><p>Contextがセットアップされていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ae114d640913c3ac173e55ec2c828b5f9" name="aff82659b650c4010df859f9144bb58a2ae114d640913c3ac173e55ec2c828b5f9"></a>SKW_ROOM_LOCAL_PERSON_ERR_REQUEST_FAILED&#160;</td><td class="fielddoc"><p>リクエストの実行に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a7d6c14d2eb5893084191dca04792ac23" name="aff82659b650c4010df859f9144bb58a2a7d6c14d2eb5893084191dca04792ac23"></a>SKW_ROOM_LOCAL_PERSON_ERR_MUTEX_UNLOCK_FAILED&#160;</td><td class="fielddoc"><p>LocalPerson APIのアンロックに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2aad5e1ba013ed4325177ff0df75c47f7e" name="aff82659b650c4010df859f9144bb58a2aad5e1ba013ed4325177ff0df75c47f7e"></a>SKW_ROOM_LOCAL_PERSON_ERR_CALLED_IN_HANDLER&#160;</td><td class="fielddoc"><p>イベントハンドラ内から呼ばれた </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a20caae42dc766d334934f04c88b10c74" name="aff82659b650c4010df859f9144bb58a2a20caae42dc766d334934f04c88b10c74"></a>SKW_ROOM_LOCAL_PERSON_ERR_SEND_FAILED&#160;</td><td class="fielddoc"><p>リクエストの送信に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a2c9cd2377435af800ac78f7789cc15be" name="aff82659b650c4010df859f9144bb58a2a2c9cd2377435af800ac78f7789cc15be"></a>SKW_ROOM_LOCAL_PERSON_ERR_TIMEOUT&#160;</td><td class="fielddoc"><p>応答の受信がタイムアウトした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2abb4caecbca2e8097adfd1ea6f603a775" name="aff82659b650c4010df859f9144bb58a2abb4caecbca2e8097adfd1ea6f603a775"></a>SKW_ROOM_LOCAL_PERSON_ERR_CONNECTION_CLOSED&#160;</td><td class="fielddoc"><p>応答待ちの間に接続が切断された </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ac9f0cdd8b0f35017325af91c4176d5fa" name="aff82659b650c4010df859f9144bb58a2ac9f0cdd8b0f35017325af91c4176d5fa"></a>SKW_ROOM_LOCAL_PERSON_ERR_RESPONSE_TOO_LARGE&#160;</td><td class="fielddoc"><p>応答が受信バッファのサイズを超過した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2afe1aa09e267d99140d7f8eeb77e2b7da" name="aff82659b650c4010df859f9144bb58a2afe1aa09e267d99140d7f8eeb77e2b7da"></a>SKW_ROOM_LOCAL_PERSON_ERR_RESPONSE_PARSE_FAILED&#160;</td><td class="fielddoc"><p>応答の解析に失敗した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ac08fe5fdda9700e8652575346477d03f" name="aff82659b650c4010df859f9144bb58a2ac08fe5fdda9700e8652575346477d03f"></a>SKW_ROOM_LOCAL_PERSON_ERR_PUBLICATION_LIMIT&#160;</td><td class="fielddoc"><p>Publishできる数の上限を超過 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a93f981b17a63c8e1653e199364361892" name="aff82659b650c4010df859f9144bb58a2a93f981b17a63c8e1653e199364361892"></a>SKW_ROOM_LOCAL_PERSON_ERR_NOT_JOINED&#160;</td><td class="fielddoc"><p>LocalPersonが存在しない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f" name="aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f"></a>SKW_ROOM_LOCAL_PERSON_ERR_STREAM_FAILED&#160;</td><td class="fielddoc"><p>Streamの確立に失敗した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347" name="aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347"></a>SKW_ROOM_LOCAL_PERSON_ERR_VIDEO_SUBSCRIBE_DISABLED&#160;</td><td class="fielddoc"><p>VideoのSubscribeが無効（Contextのオプションで許可していない） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9" name="aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9"></a>SKW_ROOM_LOCAL_PERSON_ERR_NOT_SUPPORTED&#160;</td><td class="fielddoc"><p>未サポートの機能の呼び出し </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ae72106e89a11450268f7327f81183441" name="aff82659b650c4010df859f9144bb58a2ae72106e89a11450268f7327f81183441"></a>SKW_ROOM_LOCAL_PERSON_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>不明なエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a06310bc853198d018e07a953c4ec6c06" name="aff82659b650c4010df859f9144bb58a2a06310bc853198d018e07a953c4ec6c06"></a>SKW_ROOM_LOCAL_PERSON_ERR_BAD_REQUEST&#160;</td><td class="fielddoc"><p>リクエストパラメータが不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a0b07e026c37f2ec819ed09d3c19f8873" name="aff82659b650c4010df859f9144bb58a2a0b07e026c37f2ec819ed09d3c19f8873"></a>SKW_ROOM_LOCAL_PERSON_ERR_UNAUTHORIZED&#160;</td><td class="fielddoc"><p>AuthTokenが不正、もしくは有効期限切れ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ab9a880c477ee9192ec5efbd8f17a3656" name="aff82659b650c4010df859f9144bb58a2ab9a880c477ee9192ec5efbd8f17a3656"></a>SKW_ROOM_LOCAL_PERSON_ERR_FORBIDDEN&#160;</td><td class="fielddoc"><p>必要な権限が無い </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a00b1a4d310ef02a1b488958dad8d053d" name="aff82659b650c4010df859f9144bb58a2a00b1a4d310ef02a1b488958dad8d053d"></a>SKW_ROOM_LOCAL_PERSON_ERR_NOT_FOUND&#160;</td><td class="fielddoc"><p>リソースが見つからない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ab2d9a028cc8adbbfe558e82f7b7adde2" name="aff82659b650c4010df859f9144bb58a2ab2d9a028cc8adbbfe558e82f7b7adde2"></a>SKW_ROOM_LOCAL_PERSON_ERR_ALREADY_EXIST&#160;</td><td class="fielddoc"><p>すでに存在するリソースを作成しようとした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a6512d8855f9697134867a13b9797c68c" name="aff82659b650c4010df859f9144bb58a2a6512d8855f9697134867a13b9797c68c"></a>SKW_ROOM_LOCAL_PERSON_ERR_TOO_LARGE&#160;</td><td class="fielddoc"><p>リクエストパラメータが大きすぎる </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2ab1e25ea37e23b2d90469aa7cd08183ea" name="aff82659b650c4010df859f9144bb58a2ab1e25ea37e23b2d90469aa7cd08183ea"></a>SKW_ROOM_LOCAL_PERSON_ERR_TOO_MANY_REQUESTS&#160;</td><td class="fielddoc"><p>レートリミット超過 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2aad91160a51949cfcfb4765432889cd5b" name="aff82659b650c4010df859f9144bb58a2aad91160a51949cfcfb4765432889cd5b"></a>SKW_ROOM_LOCAL_PERSON_ERR_SERVER_INTERNAL&#160;</td><td class="fielddoc"><p>サーバー内部エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a848f638e0ffd19f66486ffaaa42a0690" name="aff82659b650c4010df859f9144bb58a2a848f638e0ffd19f66486ffaaa42a0690"></a>SKW_ROOM_LOCAL_PERSON_ERR_SERVER_BUSY&#160;</td><td class="fielddoc"><p>サーバーが過負荷で一時的に利用できない </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ab45af67046952fa0733ab759b59cde26" name="ab45af67046952fa0733ab759b59cde26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45af67046952fa0733ab759b59cde26">&#9670;&#160;</a></span>skw_room_local_person_publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a> skw_room_local_person_publish </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__local__person__publish__params__t.html">skw_room_local_person_publish_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structskw__room__publication__data__field__t.html">skw_room_publication_data_field_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data_fields</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>StreamをPublishします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Publishパラメータのポインタ </td></tr>
+    <tr><td class="paramname">data_fields</td><td>PublishされたPublicationの情報を格納する出力先のポインタ（不要ならNULL）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a3ebb4b2b59014c3c8b4173313bb7e7af" name="a3ebb4b2b59014c3c8b4173313bb7e7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ebb4b2b59014c3c8b4173313bb7e7af">&#9670;&#160;</a></span>skw_room_local_person_subscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a> skw_room_local_person_subscribe </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__local__person__subscribe__params__t.html">skw_room_local_person_subscribe_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structskw__room__subscription__data__field__t.html">skw_room_subscription_data_field_t</a> *</td>          <td class="paramname"><span class="paramname"><em>data_fields</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublicationをSubscribeし、Streamが利用可能になるまでブロックします（最大60秒）。 タイムアウト・確立失敗時はSubscriptionを自動でUnsubscribeします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Subscribeパラメータのポインタ </td></tr>
+    <tr><td class="paramname">data_fields</td><td>SubscribeされたSubscriptionの情報を格納する出力先のポインタ（不要ならNULL）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a3955460f741459043387fcb101393d90" name="a3955460f741459043387fcb101393d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3955460f741459043387fcb101393d90">&#9670;&#160;</a></span>skw_room_local_person_unpublish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a> skw_room_local_person_unpublish </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__local__person__unpublish__params__t.html">skw_room_local_person_unpublish_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PublishしているStreamをUnpublishします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Unpublishパラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a630c3137730e32ab117cc929af98b052" name="a630c3137730e32ab117cc929af98b052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630c3137730e32ab117cc929af98b052">&#9670;&#160;</a></span>skw_room_local_person_unsubscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aff82659b650c4010df859f9144bb58a2">skw_room_local_person_err_t</a> skw_room_local_person_unsubscribe </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__local__person__unsubscribe__params__t.html">skw_room_local_person_unsubscribe_params_t</a> *</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SubscribeしているStreamをUnsubscribeします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>Unsubscribeパラメータのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="local__person_8h.html">local_person.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

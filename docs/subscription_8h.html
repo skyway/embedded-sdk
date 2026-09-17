@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: subscription.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('subscription_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">subscription.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Subscriptionのイベントハンドラの登録。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="member_8h_source.html">member.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="publication_8h_source.html">publication.h</a>&quot;</code><br />
+</div>
+<p><a href="subscription_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:skw_5Froom_5Fsubscription_5Fdata_5Ffield_5Ft" id="r_skw_5Froom_5Fsubscription_5Fdata_5Ffield_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__subscription__data__field__t.html">skw_room_subscription_data_field_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscriptionの取得結果を受け取る出力先。NULLを設定したフィールドには格納されない。  <a href="structskw__room__subscription__data__field__t.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:skw_5Froom_5Fsubscription_5Fhandlers_5Ft" id="r_skw_5Froom_5Fsubscription_5Fhandlers_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__room__subscription__handlers__t.html">skw_room_subscription_handlers_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscriptionの各イベント通知を受け取るハンドラ。不要なイベントのフィールドはNULLにできる。  <a href="structskw__room__subscription__handlers__t.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a89f569d7ce443d55996895f5634c61f9" id="r_a89f569d7ce443d55996895f5634c61f9"><td class="memItemLeft" align="right" valign="top"><a id="a89f569d7ce443d55996895f5634c61f9" name="a89f569d7ce443d55996895f5634c61f9"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKW_ROOM_SUBSCRIPTION_ID_SIZE</b>&#160;&#160;&#160;(36+1)</td></tr>
+<tr class="memdesc:a89f569d7ce443d55996895f5634c61f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscriptionIDを格納するバッファのサイズ（NUL終端を含む）。 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a5b860a8a51c87b560a1530d5896ab6b4" id="r_a5b860a8a51c87b560a1530d5896ab6b4"><td class="memItemLeft" align="right" valign="top"><a id="a5b860a8a51c87b560a1530d5896ab6b4" name="a5b860a8a51c87b560a1530d5896ab6b4"></a>
+typedef char&#160;</td><td class="memItemRight" valign="bottom"><b>skw_room_subscription_id_t</b>[<a class="el" href="#a89f569d7ce443d55996895f5634c61f9">SKW_ROOM_SUBSCRIPTION_ID_SIZE</a>]</td></tr>
+<tr class="memdesc:a5b860a8a51c87b560a1530d5896ab6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscriptionIDを格納する文字列型（NUL終端を含む）。 <br /></td></tr>
+<tr class="memitem:a92247cb41f615ce5dc76d5f9ffcc5ec2" id="r_a92247cb41f615ce5dc76d5f9ffcc5ec2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92247cb41f615ce5dc76d5f9ffcc5ec2">skw_room_subscription_on_data_t</a>) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:a92247cb41f615ce5dc76d5f9ffcc5ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscribeしているStreamからデータを受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。  <br /></td></tr>
+<tr class="memitem:af945de4a2cd450877c4e91eff1b17efd" id="r_af945de4a2cd450877c4e91eff1b17efd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af945de4a2cd450877c4e91eff1b17efd">skw_room_subscription_on_video_frame_t</a>) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts)</td></tr>
+<tr class="memdesc:af945de4a2cd450877c4e91eff1b17efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscribeしているStreamからエンコード済み映像フレーム（H.264）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。  <br /></td></tr>
+<tr class="memitem:ae24abc8c0269dab5f3a1e0f4b389afb5" id="r_ae24abc8c0269dab5f3a1e0f4b389afb5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae24abc8c0269dab5f3a1e0f4b389afb5">skw_room_subscription_on_audio_frame_t</a>) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts)</td></tr>
+<tr class="memdesc:ae24abc8c0269dab5f3a1e0f4b389afb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SubscribeしているStreamからエンコード済み音声フレーム（Opus）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a109c08ec0f127a9479123be5f00923a7" id="r_a109c08ec0f127a9479123be5f00923a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a> { <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7a9c67f67b105a6c7c6d52cb4f753c8fa1">SKW_ROOM_SUBSCRIPTION_OK</a> = 0
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a6be35010e7000db329da81dd891edb85">SKW_ROOM_SUBSCRIPTION_ERR_NULL_ARGS</a> = 1
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7ac6284b4fe26acc05733ae436097a6658">SKW_ROOM_SUBSCRIPTION_ERR_INVALID_ARGS</a> = 2
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a36343d499422557d5b8f02cd3b8709dc">SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_INITED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7a8cdf32f506b5c8a8e8ae829bfd9e1b84">SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_SETUP</a> = 4
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a17cf356f9f9f9cf558cf5b02c96889da">SKW_ROOM_SUBSCRIPTION_ERR_REQUEST_FAILED</a> = 5
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a01c92c437a4e422747b20bf6ac869430">SKW_ROOM_SUBSCRIPTION_ERR_MUTEX_UNLOCK_FAILED</a> = 6
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a56cc29202a555b3648e6c203151de7ef">SKW_ROOM_SUBSCRIPTION_ERR_CALLED_IN_HANDLER</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7a34762d785ba171b04878b08808affed2">SKW_ROOM_SUBSCRIPTION_ERR_SEND_FAILED</a> = 8
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a88a9d8782f32737d5b0072dacf24797b">SKW_ROOM_SUBSCRIPTION_ERR_TIMEOUT</a> = 9
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a3a872ff63e9599e7fc838786332b2f92">SKW_ROOM_SUBSCRIPTION_ERR_CONNECTION_CLOSED</a> = 10
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a16d9d1d14bdc1b5bea3792de851a4b9f">SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_TOO_LARGE</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7abc5b92d7b23d993aeec39f4b98e5e019">SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_PARSE_FAILED</a> = 12
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a41798a1fea33c9ea0a439053bfb3d517">SKW_ROOM_SUBSCRIPTION_ERR_UNKNOWN</a> = 99
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a532d16ad7f1b766c4c0b5609c0660419">SKW_ROOM_SUBSCRIPTION_ERR_BAD_REQUEST</a> = 400
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7af73b9a08d786ade45990d27b1e6ae8cb">SKW_ROOM_SUBSCRIPTION_ERR_UNAUTHORIZED</a> = 401
+, <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7aca57390d2ab7d5f975d1e037fa218133">SKW_ROOM_SUBSCRIPTION_ERR_FORBIDDEN</a> = 403
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a25bab782e459cd357441909145d064b5">SKW_ROOM_SUBSCRIPTION_ERR_NOT_FOUND</a> = 404
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7ab213c29b0ac40cc89453e4e8e57f0c1d">SKW_ROOM_SUBSCRIPTION_ERR_ALREADY_EXIST</a> = 409
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7abd57a3a0d071a0f13cb9ff0081426a6b">SKW_ROOM_SUBSCRIPTION_ERR_TOO_LARGE</a> = 413
+, <br />
+&#160;&#160;<a class="el" href="#a109c08ec0f127a9479123be5f00923a7acc22df996f9f99ba12c962a4c7a17568">SKW_ROOM_SUBSCRIPTION_ERR_TOO_MANY_REQUESTS</a> = 429
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7ab9e9a94cf41adb55b075fe34e4696614">SKW_ROOM_SUBSCRIPTION_ERR_SERVER_INTERNAL</a> = 500
+, <a class="el" href="#a109c08ec0f127a9479123be5f00923a7a7d2b5a0a26f7b4d6b76872430a1b193b">SKW_ROOM_SUBSCRIPTION_ERR_SERVER_BUSY</a> = 503
+<br />
+ }</td></tr>
+<tr class="memdesc:a109c08ec0f127a9479123be5f00923a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscription APIのエラーコード。  <a href="#a109c08ec0f127a9479123be5f00923a7">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:adac379cdee35acf6b25589a3efa506f2" id="r_adac379cdee35acf6b25589a3efa506f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adac379cdee35acf6b25589a3efa506f2">skw_room_subscription_register_handlers</a> (const <a class="el" href="structskw__room__subscription__handlers__t.html">skw_room_subscription_handlers_t</a> *handlers)</td></tr>
+<tr class="memdesc:adac379cdee35acf6b25589a3efa506f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscriptionのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。  <br /></td></tr>
+<tr class="memitem:a4c7be1f8f555e4cade3b024c41d1f94b" id="r_a4c7be1f8f555e4cade3b024c41d1f94b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c7be1f8f555e4cade3b024c41d1f94b">skw_room_subscription_unregister_handlers</a> (void)</td></tr>
+<tr class="memdesc:a4c7be1f8f555e4cade3b024c41d1f94b"><td class="mdescLeft">&#160;</td><td class="mdescRight">登録済みのイベント通知ハンドラを解除します。  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Subscriptionのイベントハンドラの登録。 </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="ae24abc8c0269dab5f3a1e0f4b389afb5" name="ae24abc8c0269dab5f3a1e0f4b389afb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24abc8c0269dab5f3a1e0f4b389afb5">&#9670;&#160;</a></span>skw_room_subscription_on_audio_frame_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* skw_room_subscription_on_audio_frame_t) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SubscribeしているStreamからエンコード済み音声フレーム（Opus）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscription_id</td><td>対象のSubscriptionのID </td></tr>
+    <tr><td class="paramname">publication_id</td><td>対象のPublicationのID </td></tr>
+    <tr><td class="paramname">data</td><td>受信したフレームデータ（呼び出し中のみ有効） </td></tr>
+    <tr><td class="paramname">length</td><td>受信したフレームデータの長さ（バイト数） </td></tr>
+    <tr><td class="paramname">pts</td><td>フレームの表示タイムスタンプ（ミリ秒） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92247cb41f615ce5dc76d5f9ffcc5ec2" name="a92247cb41f615ce5dc76d5f9ffcc5ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92247cb41f615ce5dc76d5f9ffcc5ec2">&#9670;&#160;</a></span>skw_room_subscription_on_data_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* skw_room_subscription_on_data_t) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SubscribeしているStreamからデータを受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscription_id</td><td>対象のSubscriptionのID </td></tr>
+    <tr><td class="paramname">publication_id</td><td>対象のPublicationのID </td></tr>
+    <tr><td class="paramname">data</td><td>受信したデータ（呼び出し中のみ有効） </td></tr>
+    <tr><td class="paramname">length</td><td>受信したデータの長さ（バイト数） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af945de4a2cd450877c4e91eff1b17efd" name="af945de4a2cd450877c4e91eff1b17efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af945de4a2cd450877c4e91eff1b17efd">&#9670;&#160;</a></span>skw_room_subscription_on_video_frame_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* skw_room_subscription_on_video_frame_t) (const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SubscribeしているStreamからエンコード済み映像フレーム（H.264）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscription_id</td><td>対象のSubscriptionのID </td></tr>
+    <tr><td class="paramname">publication_id</td><td>対象のPublicationのID </td></tr>
+    <tr><td class="paramname">data</td><td>受信したフレームデータ（呼び出し中のみ有効） </td></tr>
+    <tr><td class="paramname">length</td><td>受信したフレームデータの長さ（バイト数） </td></tr>
+    <tr><td class="paramname">pts</td><td>フレームの表示タイムスタンプ（ミリ秒） </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="a109c08ec0f127a9479123be5f00923a7" name="a109c08ec0f127a9479123be5f00923a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109c08ec0f127a9479123be5f00923a7">&#9670;&#160;</a></span>skw_room_subscription_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscription APIのエラーコード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a9c67f67b105a6c7c6d52cb4f753c8fa1" name="a109c08ec0f127a9479123be5f00923a7a9c67f67b105a6c7c6d52cb4f753c8fa1"></a>SKW_ROOM_SUBSCRIPTION_OK&#160;</td><td class="fielddoc"><p>正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a6be35010e7000db329da81dd891edb85" name="a109c08ec0f127a9479123be5f00923a7a6be35010e7000db329da81dd891edb85"></a>SKW_ROOM_SUBSCRIPTION_ERR_NULL_ARGS&#160;</td><td class="fielddoc"><p>引数がNULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7ac6284b4fe26acc05733ae436097a6658" name="a109c08ec0f127a9479123be5f00923a7ac6284b4fe26acc05733ae436097a6658"></a>SKW_ROOM_SUBSCRIPTION_ERR_INVALID_ARGS&#160;</td><td class="fielddoc"><p>引数の値が不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a36343d499422557d5b8f02cd3b8709dc" name="a109c08ec0f127a9479123be5f00923a7a36343d499422557d5b8f02cd3b8709dc"></a>SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_INITED&#160;</td><td class="fielddoc"><p>Contextが初期化されていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a8cdf32f506b5c8a8e8ae829bfd9e1b84" name="a109c08ec0f127a9479123be5f00923a7a8cdf32f506b5c8a8e8ae829bfd9e1b84"></a>SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_SETUP&#160;</td><td class="fielddoc"><p>Contextがセットアップされていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a17cf356f9f9f9cf558cf5b02c96889da" name="a109c08ec0f127a9479123be5f00923a7a17cf356f9f9f9cf558cf5b02c96889da"></a>SKW_ROOM_SUBSCRIPTION_ERR_REQUEST_FAILED&#160;</td><td class="fielddoc"><p>リクエストの実行に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a01c92c437a4e422747b20bf6ac869430" name="a109c08ec0f127a9479123be5f00923a7a01c92c437a4e422747b20bf6ac869430"></a>SKW_ROOM_SUBSCRIPTION_ERR_MUTEX_UNLOCK_FAILED&#160;</td><td class="fielddoc"><p>Subscription APIのアンロックに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a56cc29202a555b3648e6c203151de7ef" name="a109c08ec0f127a9479123be5f00923a7a56cc29202a555b3648e6c203151de7ef"></a>SKW_ROOM_SUBSCRIPTION_ERR_CALLED_IN_HANDLER&#160;</td><td class="fielddoc"><p>イベントハンドラ内から呼ばれた </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a34762d785ba171b04878b08808affed2" name="a109c08ec0f127a9479123be5f00923a7a34762d785ba171b04878b08808affed2"></a>SKW_ROOM_SUBSCRIPTION_ERR_SEND_FAILED&#160;</td><td class="fielddoc"><p>リクエストの送信に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a88a9d8782f32737d5b0072dacf24797b" name="a109c08ec0f127a9479123be5f00923a7a88a9d8782f32737d5b0072dacf24797b"></a>SKW_ROOM_SUBSCRIPTION_ERR_TIMEOUT&#160;</td><td class="fielddoc"><p>応答の受信がタイムアウトした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a3a872ff63e9599e7fc838786332b2f92" name="a109c08ec0f127a9479123be5f00923a7a3a872ff63e9599e7fc838786332b2f92"></a>SKW_ROOM_SUBSCRIPTION_ERR_CONNECTION_CLOSED&#160;</td><td class="fielddoc"><p>応答待ちの間に接続が切断された </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a16d9d1d14bdc1b5bea3792de851a4b9f" name="a109c08ec0f127a9479123be5f00923a7a16d9d1d14bdc1b5bea3792de851a4b9f"></a>SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_TOO_LARGE&#160;</td><td class="fielddoc"><p>応答が受信バッファのサイズを超過した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7abc5b92d7b23d993aeec39f4b98e5e019" name="a109c08ec0f127a9479123be5f00923a7abc5b92d7b23d993aeec39f4b98e5e019"></a>SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_PARSE_FAILED&#160;</td><td class="fielddoc"><p>応答の解析に失敗した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a41798a1fea33c9ea0a439053bfb3d517" name="a109c08ec0f127a9479123be5f00923a7a41798a1fea33c9ea0a439053bfb3d517"></a>SKW_ROOM_SUBSCRIPTION_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>不明なエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a532d16ad7f1b766c4c0b5609c0660419" name="a109c08ec0f127a9479123be5f00923a7a532d16ad7f1b766c4c0b5609c0660419"></a>SKW_ROOM_SUBSCRIPTION_ERR_BAD_REQUEST&#160;</td><td class="fielddoc"><p>リクエストパラメータが不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7af73b9a08d786ade45990d27b1e6ae8cb" name="a109c08ec0f127a9479123be5f00923a7af73b9a08d786ade45990d27b1e6ae8cb"></a>SKW_ROOM_SUBSCRIPTION_ERR_UNAUTHORIZED&#160;</td><td class="fielddoc"><p>AuthTokenが不正、もしくは有効期限切れ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7aca57390d2ab7d5f975d1e037fa218133" name="a109c08ec0f127a9479123be5f00923a7aca57390d2ab7d5f975d1e037fa218133"></a>SKW_ROOM_SUBSCRIPTION_ERR_FORBIDDEN&#160;</td><td class="fielddoc"><p>必要な権限が無い </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a25bab782e459cd357441909145d064b5" name="a109c08ec0f127a9479123be5f00923a7a25bab782e459cd357441909145d064b5"></a>SKW_ROOM_SUBSCRIPTION_ERR_NOT_FOUND&#160;</td><td class="fielddoc"><p>リソースが見つからない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7ab213c29b0ac40cc89453e4e8e57f0c1d" name="a109c08ec0f127a9479123be5f00923a7ab213c29b0ac40cc89453e4e8e57f0c1d"></a>SKW_ROOM_SUBSCRIPTION_ERR_ALREADY_EXIST&#160;</td><td class="fielddoc"><p>すでに存在するリソースを作成しようとした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7abd57a3a0d071a0f13cb9ff0081426a6b" name="a109c08ec0f127a9479123be5f00923a7abd57a3a0d071a0f13cb9ff0081426a6b"></a>SKW_ROOM_SUBSCRIPTION_ERR_TOO_LARGE&#160;</td><td class="fielddoc"><p>リクエストパラメータが大きすぎる </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7acc22df996f9f99ba12c962a4c7a17568" name="a109c08ec0f127a9479123be5f00923a7acc22df996f9f99ba12c962a4c7a17568"></a>SKW_ROOM_SUBSCRIPTION_ERR_TOO_MANY_REQUESTS&#160;</td><td class="fielddoc"><p>レートリミット超過 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7ab9e9a94cf41adb55b075fe34e4696614" name="a109c08ec0f127a9479123be5f00923a7ab9e9a94cf41adb55b075fe34e4696614"></a>SKW_ROOM_SUBSCRIPTION_ERR_SERVER_INTERNAL&#160;</td><td class="fielddoc"><p>サーバー内部エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a109c08ec0f127a9479123be5f00923a7a7d2b5a0a26f7b4d6b76872430a1b193b" name="a109c08ec0f127a9479123be5f00923a7a7d2b5a0a26f7b4d6b76872430a1b193b"></a>SKW_ROOM_SUBSCRIPTION_ERR_SERVER_BUSY&#160;</td><td class="fielddoc"><p>サーバーが過負荷で一時的に利用できない </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="adac379cdee35acf6b25589a3efa506f2" name="adac379cdee35acf6b25589a3efa506f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac379cdee35acf6b25589a3efa506f2">&#9670;&#160;</a></span>skw_room_subscription_register_handlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a> skw_room_subscription_register_handlers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structskw__room__subscription__handlers__t.html">skw_room_subscription_handlers_t</a> *</td>          <td class="paramname"><span class="paramname"><em>handlers</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscriptionのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handlers</td><td>Subscriptionのイベント通知を受け取るハンドラのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a4c7be1f8f555e4cade3b024c41d1f94b" name="a4c7be1f8f555e4cade3b024c41d1f94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7be1f8f555e4cade3b024c41d1f94b">&#9670;&#160;</a></span>skw_room_subscription_unregister_handlers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a109c08ec0f127a9479123be5f00923a7">skw_room_subscription_err_t</a> skw_room_subscription_unregister_handlers </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>登録済みのイベント通知ハンドラを解除します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="subscription_8h.html">subscription.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

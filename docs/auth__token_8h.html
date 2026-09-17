@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: auth_token.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('auth__token_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">auth_token.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>開発用AuthTokenの生成。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+</div>
+<p><a href="auth__token_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:skw_5Fauth_5Ftoken_5Ft" id="r_skw_5Fauth_5Ftoken_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成したAuthTokenを保持する構造体。  <a href="structskw__auth__token__t.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a0047fa8ff7c5e7faac1178bb15612c73" id="r_a0047fa8ff7c5e7faac1178bb15612c73"><td class="memItemLeft" align="right" valign="top"><a id="a0047fa8ff7c5e7faac1178bb15612c73" name="a0047fa8ff7c5e7faac1178bb15612c73"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKW_AUTH_TOKEN_MAX_TOKEN_SIZE</b>&#160;&#160;&#160;(4096U)</td></tr>
+<tr class="memdesc:a0047fa8ff7c5e7faac1178bb15612c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuthTokenを格納するバッファのサイズ（NUL終端を含む）。 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a821a8846057014753672b270f46d53dc" id="r_a821a8846057014753672b270f46d53dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a821a8846057014753672b270f46d53dc">skw_auth_token_err_t</a> { <br />
+&#160;&#160;<a class="el" href="#a821a8846057014753672b270f46d53dcab3f3a5c2e1666cfec94fb60523cc6c10">SKW_AUTH_TOKEN_OK</a> = 0
+, <a class="el" href="#a821a8846057014753672b270f46d53dca18a3164c5203d95013fd3d7ee409c6a4">SKW_AUTH_TOKEN_ERR_NULL_ARGS</a> = 1
+, <a class="el" href="#a821a8846057014753672b270f46d53dca50e39a200497cdfb2b87675d7de5de15">SKW_AUTH_TOKEN_ERR_BUFFER_OVERFLOW</a> = 2
+, <a class="el" href="#a821a8846057014753672b270f46d53dca5358d3a4a0eb12a8573d0f1dd80fc67f">SKW_AUTH_TOKEN_ERR_ENCODE_FAILED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a821a8846057014753672b270f46d53dcab85644b9d340a1fc90ffe1d069fbc653">SKW_AUTH_TOKEN_ERR_INVALID_ARGS</a> = 4
+, <a class="el" href="#a821a8846057014753672b270f46d53dca42d3fa9f455589fb9c97a52efe23b27b">SKW_AUTH_TOKEN_ERR_CLOCK_INVALID</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a821a8846057014753672b270f46d53dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">AuthToken APIのエラーコード。  <a href="#a821a8846057014753672b270f46d53dc">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a6a8aa2fe4d9045854f45ee52ce9c62f4" id="r_a6a8aa2fe4d9045854f45ee52ce9c62f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a821a8846057014753672b270f46d53dc">skw_auth_token_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8aa2fe4d9045854f45ee52ce9c62f4">skw_auth_token_generate_for_dev</a> (<a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *out_token, const char *app_id, const char *secret_key)</td></tr>
+<tr class="memdesc:a6a8aa2fe4d9045854f45ee52ce9c62f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SkyWayで利用するAuthTokenを生成します。このAuthTokenは開発用であり、商用環境での使用は推奨されません。  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>開発用AuthTokenの生成。 </p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="a821a8846057014753672b270f46d53dc" name="a821a8846057014753672b270f46d53dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821a8846057014753672b270f46d53dc">&#9670;&#160;</a></span>skw_auth_token_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a821a8846057014753672b270f46d53dc">skw_auth_token_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AuthToken APIのエラーコード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dcab3f3a5c2e1666cfec94fb60523cc6c10" name="a821a8846057014753672b270f46d53dcab3f3a5c2e1666cfec94fb60523cc6c10"></a>SKW_AUTH_TOKEN_OK&#160;</td><td class="fielddoc"><p>正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dca18a3164c5203d95013fd3d7ee409c6a4" name="a821a8846057014753672b270f46d53dca18a3164c5203d95013fd3d7ee409c6a4"></a>SKW_AUTH_TOKEN_ERR_NULL_ARGS&#160;</td><td class="fielddoc"><p>引数がNULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dca50e39a200497cdfb2b87675d7de5de15" name="a821a8846057014753672b270f46d53dca50e39a200497cdfb2b87675d7de5de15"></a>SKW_AUTH_TOKEN_ERR_BUFFER_OVERFLOW&#160;</td><td class="fielddoc"><p>出力バッファが不足 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dca5358d3a4a0eb12a8573d0f1dd80fc67f" name="a821a8846057014753672b270f46d53dca5358d3a4a0eb12a8573d0f1dd80fc67f"></a>SKW_AUTH_TOKEN_ERR_ENCODE_FAILED&#160;</td><td class="fielddoc"><p>AuthTokenの生成に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dcab85644b9d340a1fc90ffe1d069fbc653" name="a821a8846057014753672b270f46d53dcab85644b9d340a1fc90ffe1d069fbc653"></a>SKW_AUTH_TOKEN_ERR_INVALID_ARGS&#160;</td><td class="fielddoc"><p>引数の値が不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a821a8846057014753672b270f46d53dca42d3fa9f455589fb9c97a52efe23b27b" name="a821a8846057014753672b270f46d53dca42d3fa9f455589fb9c97a52efe23b27b"></a>SKW_AUTH_TOKEN_ERR_CLOCK_INVALID&#160;</td><td class="fielddoc"><p>システム時刻が不正 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a6a8aa2fe4d9045854f45ee52ce9c62f4" name="a6a8aa2fe4d9045854f45ee52ce9c62f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8aa2fe4d9045854f45ee52ce9c62f4">&#9670;&#160;</a></span>skw_auth_token_generate_for_dev()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a821a8846057014753672b270f46d53dc">skw_auth_token_err_t</a> skw_auth_token_generate_for_dev </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>out_token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>app_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>secret_key</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SkyWayで利用するAuthTokenを生成します。このAuthTokenは開発用であり、商用環境での使用は推奨されません。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">out_token</td><td>出力先のAuthTokenのポインタ </td></tr>
+    <tr><td class="paramname">app_id</td><td>アプリケーションID </td></tr>
+    <tr><td class="paramname">secret_key</td><td>シークレットキー </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="auth__token_8h.html">auth_token.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

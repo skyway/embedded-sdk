@@ -1,0 +1,39 @@
+menu "SkyWay Quickstart Configuration"
+
+    config SKYWAY_QUICKSTART_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID of the access point to connect to.
+
+    config SKYWAY_QUICKSTART_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            Password of the access point. Leave empty for an open network.
+
+    config SKYWAY_QUICKSTART_APP_ID
+        string "SkyWay AppID"
+        default "app-id"
+        help
+            Application ID issued by the SkyWay console.
+
+    config SKYWAY_QUICKSTART_SECRET_KEY
+        string "SkyWay SecretKey"
+        default "secret-key"
+        help
+            Secret key issued by the SkyWay console. For development use only.
+
+    config SKYWAY_QUICKSTART_ROOM_NAME
+        string "Room name"
+        default "skyway-quickstart"
+        help
+            Name of the room to join. Up to 128 characters.
+
+    config SKYWAY_QUICKSTART_MEMBER_NAME
+        string "Member name"
+        default "esp32"
+        help
+            Name of this device in the room. Up to 128 characters.
+
+endmenu

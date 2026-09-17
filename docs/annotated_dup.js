@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "skw_auth_token_t", "structskw__auth__token__t.html", "structskw__auth__token__t" ],
+    [ "skw_context_setup_options_t", "structskw__context__setup__options__t.html", "structskw__context__setup__options__t" ],
+    [ "skw_logger_handlers_t", "structskw__logger__handlers__t.html", "structskw__logger__handlers__t" ],
+    [ "skw_room_create_params_t", "structskw__room__create__params__t.html", "structskw__room__create__params__t" ],
+    [ "skw_room_data_field_t", "structskw__room__data__field__t.html", "structskw__room__data__field__t" ],
+    [ "skw_room_find_by_id_params_t", "structskw__room__find__by__id__params__t.html", "structskw__room__find__by__id__params__t" ],
+    [ "skw_room_find_by_name_params_t", "structskw__room__find__by__name__params__t.html", "structskw__room__find__by__name__params__t" ],
+    [ "skw_room_find_or_create_params_t", "structskw__room__find__or__create__params__t.html", "structskw__room__find__or__create__params__t" ],
+    [ "skw_room_handlers_t", "structskw__room__handlers__t.html", "structskw__room__handlers__t" ],
+    [ "skw_room_join_params_t", "structskw__room__join__params__t.html", "structskw__room__join__params__t" ],
+    [ "skw_room_local_person_publish_params_t", "structskw__room__local__person__publish__params__t.html", "structskw__room__local__person__publish__params__t" ],
+    [ "skw_room_local_person_subscribe_params_t", "structskw__room__local__person__subscribe__params__t.html", "structskw__room__local__person__subscribe__params__t" ],
+    [ "skw_room_local_person_unpublish_params_t", "structskw__room__local__person__unpublish__params__t.html", "structskw__room__local__person__unpublish__params__t" ],
+    [ "skw_room_local_person_unsubscribe_params_t", "structskw__room__local__person__unsubscribe__params__t.html", "structskw__room__local__person__unsubscribe__params__t" ],
+    [ "skw_room_member_data_field_t", "structskw__room__member__data__field__t.html", "structskw__room__member__data__field__t" ],
+    [ "skw_room_member_leave_params_t", "structskw__room__member__leave__params__t.html", "structskw__room__member__leave__params__t" ],
+    [ "skw_room_member_update_metadata_params_t", "structskw__room__member__update__metadata__params__t.html", "structskw__room__member__update__metadata__params__t" ],
+    [ "skw_room_publication_data_field_t", "structskw__room__publication__data__field__t.html", "structskw__room__publication__data__field__t" ],
+    [ "skw_room_publication_handlers_t", "structskw__room__publication__handlers__t.html", "structskw__room__publication__handlers__t" ],
+    [ "skw_room_publication_send_data_params_t", "structskw__room__publication__send__data__params__t.html", "structskw__room__publication__send__data__params__t" ],
+    [ "skw_room_publication_send_frame_params_t", "structskw__room__publication__send__frame__params__t.html", "structskw__room__publication__send__frame__params__t" ],
+    [ "skw_room_publication_update_metadata_params_t", "structskw__room__publication__update__metadata__params__t.html", "structskw__room__publication__update__metadata__params__t" ],
+    [ "skw_room_subscription_data_field_t", "structskw__room__subscription__data__field__t.html", "structskw__room__subscription__data__field__t" ],
+    [ "skw_room_subscription_handlers_t", "structskw__room__subscription__handlers__t.html", "structskw__room__subscription__handlers__t" ],
+    [ "skw_room_update_metadata_params_t", "structskw__room__update__metadata__params__t.html", "structskw__room__update__metadata__params__t" ]
+];

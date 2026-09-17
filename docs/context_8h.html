@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SkyWay Embedded SDK: context.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('context_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">context.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>SDKの初期化とSkyWayサーバーへの接続。  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="auth__token_8h_source.html">auth_token.h</a>&quot;</code><br />
+</div>
+<p><a href="context_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+データ構造</h2></td></tr>
+<tr class="memitem:skw_5Fcontext_5Fsetup_5Foptions_5Ft" id="r_skw_5Fcontext_5Fsetup_5Foptions_5Ft"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contextの初期化時に使用するオプション。  <a href="structskw__context__setup__options__t.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:aa5c92d72620133933c3a78fbdd8c32f8" id="r_aa5c92d72620133933c3a78fbdd8c32f8"><td class="memItemLeft" align="right" valign="top"><a id="aa5c92d72620133933c3a78fbdd8c32f8" name="aa5c92d72620133933c3a78fbdd8c32f8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKW_CONTEXT_SUPPRESS_LOG_TAGS</b>&#160;&#160;&#160;{&quot;AGENT&quot;, &quot;BUF_MNGR&quot;, &quot;PEER_DEF&quot;, &quot;DTLS&quot;}</td></tr>
+<tr class="memdesc:aa5c92d72620133933c3a78fbdd8c32f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">skw_context_setupが出力を抑制するログのタグ。 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a74471a6967773dd69a374af3a2b86bc3" id="r_a74471a6967773dd69a374af3a2b86bc3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> { <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68">SKW_CONTEXT_OK</a> = 0
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489">SKW_CONTEXT_ERR_NULL_ARGS</a> = 1
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6">SKW_CONTEXT_ERR_NOT_INITED</a> = 2
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d">SKW_CONTEXT_ERR_ALREADY_INITED</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc">SKW_CONTEXT_ERR_DISCONNECT_FAILED</a> = 4
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36">SKW_CONTEXT_ERR_NOT_SETUP</a> = 5
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267">SKW_CONTEXT_ERR_ALREADY_SETUP</a> = 6
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b">SKW_CONTEXT_ERR_API_TIMEOUT</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82">SKW_CONTEXT_ERR_MUTEX_UNLOCK_FAILED</a> = 8
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70">SKW_CONTEXT_ERR_APP_ID_TOO_LONG</a> = 9
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f">SKW_CONTEXT_ERR_INVALID_TOKEN</a> = 10
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb">SKW_CONTEXT_ERR_CALLED_IN_HANDLER</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62">SKW_CONTEXT_ERR_APP_ID_MISMATCH</a> = 12
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143">SKW_CONTEXT_ERR_SEND_FAILED</a> = 13
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e">SKW_CONTEXT_ERR_TIMEOUT</a> = 14
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d">SKW_CONTEXT_ERR_CONNECTION_CLOSED</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5">SKW_CONTEXT_ERR_RESPONSE_TOO_LARGE</a> = 16
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140">SKW_CONTEXT_ERR_RESPONSE_PARSE_FAILED</a> = 17
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512">SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE</a> = 18
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69">SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED</a> = 19
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631">SKW_CONTEXT_ERR_SIGNALING_FAILED</a> = 20
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924">SKW_CONTEXT_ERR_UNKNOWN</a> = 99
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189">SKW_CONTEXT_ERR_BAD_REQUEST</a> = 400
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05">SKW_CONTEXT_ERR_UNAUTHORIZED</a> = 401
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d">SKW_CONTEXT_ERR_FORBIDDEN</a> = 403
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685">SKW_CONTEXT_ERR_NOT_FOUND</a> = 404
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c">SKW_CONTEXT_ERR_ALREADY_EXIST</a> = 409
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583">SKW_CONTEXT_ERR_TOO_LARGE</a> = 413
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39">SKW_CONTEXT_ERR_TOO_MANY_REQUESTS</a> = 429
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2">SKW_CONTEXT_ERR_SERVER_INTERNAL</a> = 500
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729">SKW_CONTEXT_ERR_SERVER_BUSY</a> = 503
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef">SKW_CONTEXT_FATAL_ALLOCATE_FAILED</a> = -1
+, <br />
+&#160;&#160;<a class="el" href="#a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b">SKW_CONTEXT_FATAL_CLEANUP_FAILED</a> = -2
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786">SKW_CONTEXT_FATAL_SETUP_FAILED</a> = -3
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b">SKW_CONTEXT_FATAL_CONNECT_FAILED</a> = -4
+, <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18">SKW_CONTEXT_FATAL_INIT_FAILED</a> = -5
+<br />
+ }</td></tr>
+<tr class="memdesc:a74471a6967773dd69a374af3a2b86bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context APIのエラーコード。  <a href="#a74471a6967773dd69a374af3a2b86bc3">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a1155c52153f3afc8287f1f944b066c95" id="r_a1155c52153f3afc8287f1f944b066c95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1155c52153f3afc8287f1f944b066c95">skw_context_init</a> (void)</td></tr>
+<tr class="memdesc:a1155c52153f3afc8287f1f944b066c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contextを初期化します。他のAPIを利用する前に最初に一度呼び出す必要があります。  <br /></td></tr>
+<tr class="memitem:a8be37a4feddb1d09966e831fb99275d0" id="r_a8be37a4feddb1d09966e831fb99275d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8be37a4feddb1d09966e831fb99275d0">skw_context_setup</a> (<a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *auth_token, <a class="el" href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a> *options)</td></tr>
+<tr class="memdesc:a8be37a4feddb1d09966e831fb99275d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contextを初期化し、SkyWayサーバーへの接続を確立します。 disable_log_suppressionを指定しない場合、SKW_CONTEXT_SUPPRESS_LOG_TAGSのタグの出力を止めます。  <br /></td></tr>
+<tr class="memitem:ae3d2d4250c5998b356d44973b3e27779" id="r_ae3d2d4250c5998b356d44973b3e27779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3d2d4250c5998b356d44973b3e27779">skw_context_dispose</a> (void)</td></tr>
+<tr class="memdesc:ae3d2d4250c5998b356d44973b3e27779"><td class="mdescLeft">&#160;</td><td class="mdescRight">SkyWayサーバーとの通信を切断、確保したリソースを解放します。  <br /></td></tr>
+<tr class="memitem:a9a0cb7b77a6608f8df1ef0298442e836" id="r_a9a0cb7b77a6608f8df1ef0298442e836"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a0cb7b77a6608f8df1ef0298442e836">skw_context_update_auth_token</a> (<a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *auth_token)</td></tr>
+<tr class="memdesc:a9a0cb7b77a6608f8df1ef0298442e836"><td class="mdescLeft">&#160;</td><td class="mdescRight">認証に使用するAuthTokenを新しいAuthTokenへ更新します。  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>SDKの初期化とSkyWayサーバーへの接続。 </p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="a74471a6967773dd69a374af3a2b86bc3" name="a74471a6967773dd69a374af3a2b86bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74471a6967773dd69a374af3a2b86bc3">&#9670;&#160;</a></span>skw_context_err_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Context APIのエラーコード。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68" name="a74471a6967773dd69a374af3a2b86bc3a3a8c8393cf2d8aaf96a9226ea8f7fa68"></a>SKW_CONTEXT_OK&#160;</td><td class="fielddoc"><p>正常終了 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489" name="a74471a6967773dd69a374af3a2b86bc3a788fbc96d9564fc96becb40ffdd18489"></a>SKW_CONTEXT_ERR_NULL_ARGS&#160;</td><td class="fielddoc"><p>引数がNULL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6" name="a74471a6967773dd69a374af3a2b86bc3a323e68f7cf4fc5fa4fc8ac2b68995ba6"></a>SKW_CONTEXT_ERR_NOT_INITED&#160;</td><td class="fielddoc"><p>Contextが初期化されていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d" name="a74471a6967773dd69a374af3a2b86bc3a22b907dd5ac0426c48a75db29bd97a8d"></a>SKW_CONTEXT_ERR_ALREADY_INITED&#160;</td><td class="fielddoc"><p>Contextがすでに初期化済み </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc" name="a74471a6967773dd69a374af3a2b86bc3a0bf46144515b66679f3a092990478ecc"></a>SKW_CONTEXT_ERR_DISCONNECT_FAILED&#160;</td><td class="fielddoc"><p>サーバーからの切断に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36" name="a74471a6967773dd69a374af3a2b86bc3acf2029f5e7371027b2d504d9f06f1a36"></a>SKW_CONTEXT_ERR_NOT_SETUP&#160;</td><td class="fielddoc"><p>Contextがセットアップされていない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267" name="a74471a6967773dd69a374af3a2b86bc3ac6e0f68068d162e0c0d9789c84781267"></a>SKW_CONTEXT_ERR_ALREADY_SETUP&#160;</td><td class="fielddoc"><p>Contextがすでにセットアップ済み </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b" name="a74471a6967773dd69a374af3a2b86bc3a96dff0293587ebb1ca7d6edc1695445b"></a>SKW_CONTEXT_ERR_API_TIMEOUT&#160;</td><td class="fielddoc"><p>Context APIがタイムアウトした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82" name="a74471a6967773dd69a374af3a2b86bc3a53713d2614dde8b77ff33a24bbfdbd82"></a>SKW_CONTEXT_ERR_MUTEX_UNLOCK_FAILED&#160;</td><td class="fielddoc"><p>Context APIのアンロックに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70" name="a74471a6967773dd69a374af3a2b86bc3aa14ad269dc0f097de477f8f444854a70"></a>SKW_CONTEXT_ERR_APP_ID_TOO_LONG&#160;</td><td class="fielddoc"><p>AppIDが長すぎる </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f" name="a74471a6967773dd69a374af3a2b86bc3a68d7d03ccc75e1233a72cc7aeddb158f"></a>SKW_CONTEXT_ERR_INVALID_TOKEN&#160;</td><td class="fielddoc"><p>AuthTokenが不正 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb" name="a74471a6967773dd69a374af3a2b86bc3ac93f05435e7555bf6a325cf983faeaeb"></a>SKW_CONTEXT_ERR_CALLED_IN_HANDLER&#160;</td><td class="fielddoc"><p>イベントハンドラ内から呼ばれた </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62" name="a74471a6967773dd69a374af3a2b86bc3a320999248dbb3580586d65ed21b7dd62"></a>SKW_CONTEXT_ERR_APP_ID_MISMATCH&#160;</td><td class="fielddoc"><p>AuthToken内のappIdが現在のappIdと一致しない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143" name="a74471a6967773dd69a374af3a2b86bc3a661a47293d27fb5198ea13cf56062143"></a>SKW_CONTEXT_ERR_SEND_FAILED&#160;</td><td class="fielddoc"><p>リクエストの送信に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e" name="a74471a6967773dd69a374af3a2b86bc3a13d02169d36564723bf1193bf0ded03e"></a>SKW_CONTEXT_ERR_TIMEOUT&#160;</td><td class="fielddoc"><p>応答の受信がタイムアウトした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d" name="a74471a6967773dd69a374af3a2b86bc3a019390462d8e76cc17a80065f740294d"></a>SKW_CONTEXT_ERR_CONNECTION_CLOSED&#160;</td><td class="fielddoc"><p>応答待ちの間に接続が切断された </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5" name="a74471a6967773dd69a374af3a2b86bc3af6df72df022498a08f0f7f473cb605a5"></a>SKW_CONTEXT_ERR_RESPONSE_TOO_LARGE&#160;</td><td class="fielddoc"><p>応答が受信バッファのサイズを超過した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140" name="a74471a6967773dd69a374af3a2b86bc3abe210923f65cb298daef0eabcaf09140"></a>SKW_CONTEXT_ERR_RESPONSE_PARSE_FAILED&#160;</td><td class="fielddoc"><p>応答の解析に失敗した </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512" name="a74471a6967773dd69a374af3a2b86bc3af4641f49c32765d80dc1fd6e3ae7e512"></a>SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE&#160;</td><td class="fielddoc"><p>シグナリングのセッションが確立していない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69" name="a74471a6967773dd69a374af3a2b86bc3a622dd1c039d078b1e7dbc68fb14a3a69"></a>SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED&#160;</td><td class="fielddoc"><p>シグナリングが切断された（復帰はdispose後のsetup/join） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631" name="a74471a6967773dd69a374af3a2b86bc3aa09d489a90bc454927a9d9a518a46631"></a>SKW_CONTEXT_ERR_SIGNALING_FAILED&#160;</td><td class="fielddoc"><p>シグナリングの操作に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924" name="a74471a6967773dd69a374af3a2b86bc3a223d1bb23f75bf6f866c9489c4382924"></a>SKW_CONTEXT_ERR_UNKNOWN&#160;</td><td class="fielddoc"><p>不明なエラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189" name="a74471a6967773dd69a374af3a2b86bc3a2cfa268692b4a62966f821c8118cc189"></a>SKW_CONTEXT_ERR_BAD_REQUEST&#160;</td><td class="fielddoc"><p>不正なリクエスト </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05" name="a74471a6967773dd69a374af3a2b86bc3a4acb9ce49ddb44c71122a13283962e05"></a>SKW_CONTEXT_ERR_UNAUTHORIZED&#160;</td><td class="fielddoc"><p>AuthTokenが不正、もしくは有効期限切れ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d" name="a74471a6967773dd69a374af3a2b86bc3a7a601177f0800cd0e3eb787aacf0777d"></a>SKW_CONTEXT_ERR_FORBIDDEN&#160;</td><td class="fielddoc"><p>必要な権限が無い </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685" name="a74471a6967773dd69a374af3a2b86bc3a7363054dce4b7af1952c73c1861b8685"></a>SKW_CONTEXT_ERR_NOT_FOUND&#160;</td><td class="fielddoc"><p>リソースが見つからない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c" name="a74471a6967773dd69a374af3a2b86bc3a48122b3a225c4b24296ed5294add400c"></a>SKW_CONTEXT_ERR_ALREADY_EXIST&#160;</td><td class="fielddoc"><p>すでに存在するリソースを作成しようとした </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583" name="a74471a6967773dd69a374af3a2b86bc3a7f3b2fa2009708930b2eaa2f6a0b9583"></a>SKW_CONTEXT_ERR_TOO_LARGE&#160;</td><td class="fielddoc"><p>リクエストが大きすぎる </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39" name="a74471a6967773dd69a374af3a2b86bc3a93e24a853471cd51be2604e9ac382c39"></a>SKW_CONTEXT_ERR_TOO_MANY_REQUESTS&#160;</td><td class="fielddoc"><p>レートリミット超過 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2" name="a74471a6967773dd69a374af3a2b86bc3a2555d4ef5dc52dc287bf4ffe34206df2"></a>SKW_CONTEXT_ERR_SERVER_INTERNAL&#160;</td><td class="fielddoc"><p>サーバー内部エラー </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729" name="a74471a6967773dd69a374af3a2b86bc3a364e6e792e102791885a7f1b039bc729"></a>SKW_CONTEXT_ERR_SERVER_BUSY&#160;</td><td class="fielddoc"><p>サーバーが過負荷で一時的に利用できない </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef" name="a74471a6967773dd69a374af3a2b86bc3a27d3607dd8286e43ccbffdb2c64fceef"></a>SKW_CONTEXT_FATAL_ALLOCATE_FAILED&#160;</td><td class="fielddoc"><p>致命的エラー: メモリ確保に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b" name="a74471a6967773dd69a374af3a2b86bc3ab8e747ef3ff6f8193e6b1da45344aa0b"></a>SKW_CONTEXT_FATAL_CLEANUP_FAILED&#160;</td><td class="fielddoc"><p>致命的エラー: クリーンアップに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786" name="a74471a6967773dd69a374af3a2b86bc3aabf5f7dd782ab088095772fafedcd786"></a>SKW_CONTEXT_FATAL_SETUP_FAILED&#160;</td><td class="fielddoc"><p>致命的エラー: セットアップに失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b" name="a74471a6967773dd69a374af3a2b86bc3a8998ccbe1290fa94d3c34fa94ce1620b"></a>SKW_CONTEXT_FATAL_CONNECT_FAILED&#160;</td><td class="fielddoc"><p>致命的エラー: サーバーへの接続に失敗 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18" name="a74471a6967773dd69a374af3a2b86bc3a02f91238eaf686d0778344d858538b18"></a>SKW_CONTEXT_FATAL_INIT_FAILED&#160;</td><td class="fielddoc"><p>致命的エラー: 初期化に失敗 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ae3d2d4250c5998b356d44973b3e27779" name="ae3d2d4250c5998b356d44973b3e27779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d2d4250c5998b356d44973b3e27779">&#9670;&#160;</a></span>skw_context_dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> skw_context_dispose </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SkyWayサーバーとの通信を切断、確保したリソースを解放します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a1155c52153f3afc8287f1f944b066c95" name="a1155c52153f3afc8287f1f944b066c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1155c52153f3afc8287f1f944b066c95">&#9670;&#160;</a></span>skw_context_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> skw_context_init </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contextを初期化します。他のAPIを利用する前に最初に一度呼び出す必要があります。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a8be37a4feddb1d09966e831fb99275d0" name="a8be37a4feddb1d09966e831fb99275d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be37a4feddb1d09966e831fb99275d0">&#9670;&#160;</a></span>skw_context_setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> skw_context_setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>auth_token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structskw__context__setup__options__t.html">skw_context_setup_options_t</a> *</td>          <td class="paramname"><span class="paramname"><em>options</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contextを初期化し、SkyWayサーバーへの接続を確立します。 disable_log_suppressionを指定しない場合、SKW_CONTEXT_SUPPRESS_LOG_TAGSのタグの出力を止めます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth_token</td><td>認証に使用するAuthTokenのポインタ </td></tr>
+    <tr><td class="paramname">options</td><td>初期化時に利用するオプションのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+<a id="a9a0cb7b77a6608f8df1ef0298442e836" name="a9a0cb7b77a6608f8df1ef0298442e836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0cb7b77a6608f8df1ef0298442e836">&#9670;&#160;</a></span>skw_context_update_auth_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74471a6967773dd69a374af3a2b86bc3">skw_context_err_t</a> skw_context_update_auth_token </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structskw__auth__token__t.html">skw_auth_token_t</a> *</td>          <td class="paramname"><span class="paramname"><em>auth_token</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>認証に使用するAuthTokenを新しいAuthTokenへ更新します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth_token</td><td>新しいAuthTokenのポインタ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>エラーコード </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="context_8h.html">context.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

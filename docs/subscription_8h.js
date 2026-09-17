@@ -1,0 +1,37 @@
+var subscription_8h =
+[
+    [ "skw_room_subscription_data_field_t", "structskw__room__subscription__data__field__t.html", "structskw__room__subscription__data__field__t" ],
+    [ "skw_room_subscription_handlers_t", "structskw__room__subscription__handlers__t.html", "structskw__room__subscription__handlers__t" ],
+    [ "SKW_ROOM_SUBSCRIPTION_ID_SIZE", "subscription_8h.html#a89f569d7ce443d55996895f5634c61f9", null ],
+    [ "skw_room_subscription_id_t", "subscription_8h.html#a5b860a8a51c87b560a1530d5896ab6b4", null ],
+    [ "skw_room_subscription_on_audio_frame_t", "subscription_8h.html#ae24abc8c0269dab5f3a1e0f4b389afb5", null ],
+    [ "skw_room_subscription_on_data_t", "subscription_8h.html#a92247cb41f615ce5dc76d5f9ffcc5ec2", null ],
+    [ "skw_room_subscription_on_video_frame_t", "subscription_8h.html#af945de4a2cd450877c4e91eff1b17efd", null ],
+    [ "skw_room_subscription_err_t", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7", [
+      [ "SKW_ROOM_SUBSCRIPTION_OK", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a9c67f67b105a6c7c6d52cb4f753c8fa1", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_NULL_ARGS", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a6be35010e7000db329da81dd891edb85", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_INVALID_ARGS", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7ac6284b4fe26acc05733ae436097a6658", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_INITED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a36343d499422557d5b8f02cd3b8709dc", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_CONTEXT_NOT_SETUP", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a8cdf32f506b5c8a8e8ae829bfd9e1b84", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_REQUEST_FAILED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a17cf356f9f9f9cf558cf5b02c96889da", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_MUTEX_UNLOCK_FAILED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a01c92c437a4e422747b20bf6ac869430", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_CALLED_IN_HANDLER", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a56cc29202a555b3648e6c203151de7ef", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_SEND_FAILED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a34762d785ba171b04878b08808affed2", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_TIMEOUT", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a88a9d8782f32737d5b0072dacf24797b", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_CONNECTION_CLOSED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a3a872ff63e9599e7fc838786332b2f92", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_TOO_LARGE", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a16d9d1d14bdc1b5bea3792de851a4b9f", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_RESPONSE_PARSE_FAILED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7abc5b92d7b23d993aeec39f4b98e5e019", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_UNKNOWN", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a41798a1fea33c9ea0a439053bfb3d517", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_BAD_REQUEST", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a532d16ad7f1b766c4c0b5609c0660419", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_UNAUTHORIZED", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7af73b9a08d786ade45990d27b1e6ae8cb", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_FORBIDDEN", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7aca57390d2ab7d5f975d1e037fa218133", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_NOT_FOUND", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a25bab782e459cd357441909145d064b5", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_ALREADY_EXIST", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7ab213c29b0ac40cc89453e4e8e57f0c1d", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_TOO_LARGE", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7abd57a3a0d071a0f13cb9ff0081426a6b", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_TOO_MANY_REQUESTS", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7acc22df996f9f99ba12c962a4c7a17568", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_SERVER_INTERNAL", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7ab9e9a94cf41adb55b075fe34e4696614", null ],
+      [ "SKW_ROOM_SUBSCRIPTION_ERR_SERVER_BUSY", "subscription_8h.html#a109c08ec0f127a9479123be5f00923a7a7d2b5a0a26f7b4d6b76872430a1b193b", null ]
+    ] ],
+    [ "skw_room_subscription_register_handlers", "subscription_8h.html#adac379cdee35acf6b25589a3efa506f2", null ],
+    [ "skw_room_subscription_unregister_handlers", "subscription_8h.html#a4c7be1f8f555e4cade3b024c41d1f94b", null ]
+];

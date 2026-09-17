@@ -1,0 +1,5 @@
+# ESP32-S3向けの設定。PSRAMを8MB以上（Octal SPI）搭載したモジュールを前提とする。
+# PSRAMが8MB未満のモジュールではメモリが不足するため利用できない。
+CONFIG_SPIRAM_MODE_OCT=y
+CONFIG_SPIRAM_SPEED_80M=y
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
