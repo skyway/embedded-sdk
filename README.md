@@ -14,7 +14,7 @@ SkyWay Embedded SDK(以下、Embedded SDK)は、ESP32などの組み込み機器
 
 ## ドキュメント
 
-- [Embedded SDK APIリファレンス](https://embedded-sdk.api-reference.skyway.ntt.com/room/)
+- [Embedded SDK APIリファレンス](https://embedded-sdk.api-reference.skyway.ntt.com/)
 - [ユーザーガイド](https://skyway.ntt.com/ja/docs/user-guide/embedded-sdk/)
 
 ## サンプルコード
