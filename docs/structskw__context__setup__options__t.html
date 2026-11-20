@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,16 @@ struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="memdesc:a5252af334305af3d694ec37e42859093"><td class="mdescLeft">&#160;</td><td class="mdescRight">VideoのSubscribeを許可します。Videoの受信は通信処理の負荷が高く注意が必要です。 <br /></td></tr>
 <tr class="memitem:ae8d5984a3639e28beda4597a987bbf7d" id="r_ae8d5984a3639e28beda4597a987bbf7d"><td class="memItemLeft anonEnd" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>experimental</b></td></tr>
 <tr class="memdesc:ae8d5984a3639e28beda4597a987bbf7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">試験的機能。利用の際には注意の必要な挙動や制約が含まれることがあります。 <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft anon"><a id="aa909e4d9b60bb8d0f308e48edce9b6f5" name="aa909e4d9b60bb8d0f308e48edce9b6f5"></a>
+struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:abb4b9c093e314f232a2dfebb56568f27" id="r_abb4b9c093e314f232a2dfebb56568f27"><td class="memItemLeft anon">
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>control</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:abb4b9c093e314f232a2dfebb56568f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">サーバーとの接続を維持するタスクの優先度。既定は7です。 <br /></td></tr>
+<tr class="memitem:a93bb5d159d7dd463ee197f4abeb01814" id="r_a93bb5d159d7dd463ee197f4abeb01814"><td class="memItemLeft anon">
+&#160;&#160;&#160;uint32_t&#160;&#160;&#160;<b>data</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a93bb5d159d7dd463ee197f4abeb01814"><td class="mdescLeft">&#160;</td><td class="mdescRight">通信相手とのデータ送受信を処理するタスクの優先度。既定は6です。 <br /></td></tr>
+<tr class="memitem:aa909e4d9b60bb8d0f308e48edce9b6f5" id="r_aa909e4d9b60bb8d0f308e48edce9b6f5"><td class="memItemLeft anonEnd" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>task_priority</b></td></tr>
+<tr class="memdesc:aa909e4d9b60bb8d0f308e48edce9b6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDKが内部で動かすタスクの優先度。0を指定した項目は既定値を使用します。 dataはcontrolより低くしてください。片方だけを指定した場合も既定値と比べ、dataがcontrol以上なら警告を出します。 <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock"><p>Contextの初期化時に使用するオプション。 </p>

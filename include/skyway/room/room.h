@@ -15,7 +15,6 @@ extern "C"
 #include "skyway/room/publication.h"
 #include "skyway/room/subscription.h"
 
-
 /// @brief RoomIDを格納するバッファのサイズ（NUL終端を含む）。
 #define SKW_ROOM_ID_SIZE (36+1)
 /// @brief RoomNameを格納するバッファのサイズ（NUL終端を含む）。
@@ -54,7 +53,7 @@ extern "C"
 #define SKW_ROOM_CAPACITY_SUBSCRIPTIONS (SKW_ROOM_PERSON_COUNT * SKW_ROOM_REMOTE_MEMBER_COUNT * SKW_ROOM_MEMBER_PUBLICATION_COUNT)
 
 /// @brief skw_room_joinでttl_secを指定しなかった場合に使うMemberの有効期間（秒）。
-#define SKW_ROOM_JOIN_TTL_SEC_DEFAULT (30U)
+#define SKW_ROOM_JOIN_TTL_SEC_DEFAULT (120U)
 
 /// @brief Room APIのエラーコード。
 typedef enum {
@@ -123,60 +122,60 @@ typedef struct {
 
 /// @brief Roomが削除されたときに呼ばれます。
 /// @param room_id 対象のRoomID
-typedef void (*skw_room_on_room_closed_t)(const char* room_id);
+typedef void (*skw_room_on_room_closed_t)(const char *room_id);
 
 /// @brief RoomのMetadataが更新されたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param metadata 更新後のMetadata（イベントに含まれない場合はNULL）
-typedef void (*skw_room_on_room_metadata_updated_t)(const char* room_id, const char* metadata);
+typedef void (*skw_room_on_room_metadata_updated_t)(const char *room_id, const char *metadata);
 
 /// @brief Memberが参加したときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param member_id 参加したMemberのID
-typedef void (*skw_room_on_member_joined_t)(const char* room_id, const char* member_id);
+typedef void (*skw_room_on_member_joined_t)(const char *room_id, const char *member_id);
 
 /// @brief Memberが退出したときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param member_id 退出したMemberのID
-typedef void (*skw_room_on_member_left_t)(const char* room_id, const char* member_id);
+typedef void (*skw_room_on_member_left_t)(const char *room_id, const char *member_id);
 
 /// @brief MemberのMetadataが更新されたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param member_id 対象のMemberのID
 /// @param metadata 更新後のMetadata（イベントに含まれない場合はNULL）
-typedef void (*skw_room_on_member_metadata_updated_t)(const char* room_id, const char* member_id, const char* metadata);
+typedef void (*skw_room_on_member_metadata_updated_t)(const char *room_id, const char *member_id, const char *metadata);
 
 /// @brief StreamがPublishされたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param publication_id PublicationのID
 /// @param publisher_id PublishしたMember（Publisher）のID
 /// @param content_type Publicationのコンテンツ種別
-typedef void (*skw_room_on_stream_published_t)(const char* room_id, const char* publication_id, const char* publisher_id,
+typedef void (*skw_room_on_stream_published_t)(const char *room_id, const char *publication_id, const char *publisher_id,
                                                skw_room_publication_content_type_t content_type);
 
 /// @brief StreamがUnpublishされたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param publication_id PublicationのID
 /// @param publisher_id UnpublishしたMember（Publisher）のID
-typedef void (*skw_room_on_stream_unpublished_t)(const char* room_id, const char* publication_id, const char* publisher_id);
+typedef void (*skw_room_on_stream_unpublished_t)(const char *room_id, const char *publication_id, const char *publisher_id);
 
 /// @brief PublicationがSubscribeされたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param subscription_id SubscriptionのID
 /// @param member_id SubscribeしたMemberのID
-typedef void (*skw_room_on_publication_subscribed_t)(const char* room_id, const char* subscription_id, const char* member_id);
+typedef void (*skw_room_on_publication_subscribed_t)(const char *room_id, const char *subscription_id, const char *member_id);
 
 /// @brief PublicationがUnsubscribeされたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param subscription_id SubscriptionのID
 /// @param member_id UnsubscribeしたMemberのID
-typedef void (*skw_room_on_publication_unsubscribed_t)(const char* room_id, const char* subscription_id, const char* member_id);
+typedef void (*skw_room_on_publication_unsubscribed_t)(const char *room_id, const char *subscription_id, const char *member_id);
 
 /// @brief PublicationのMetadataが更新されたときに呼ばれます。
 /// @param room_id 対象のRoomID
 /// @param publication_id 対象のPublicationのID
 /// @param metadata 更新後のMetadata（イベントに含まれない場合はNULL）
-typedef void (*skw_room_on_publication_metadata_updated_t)(const char* room_id, const char* publication_id, const char* metadata);
+typedef void (*skw_room_on_publication_metadata_updated_t)(const char *room_id, const char *publication_id, const char *metadata);
 
 /// @brief Roomの各イベント通知を受け取るハンドラ。不要なイベントのフィールドはNULLにできる。
 typedef struct skw_room_handlers_t {
@@ -194,8 +193,8 @@ typedef struct skw_room_handlers_t {
 
 /// @brief skw_room_createのパラメータ。
 typedef struct {
-    const char* name;     ///< RoomName
-    const char* metadata; ///< RoomMetadata
+    const char *name;     ///< RoomName
+    const char *metadata; ///< RoomMetadata
 } skw_room_create_params_t;
 
 /// @brief skw_room_create_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -203,7 +202,7 @@ typedef struct {
 
 /// @brief skw_room_find_by_idのパラメータ。
 typedef struct {
-    const char* id; ///< 検索するRoomID
+    const char *id; ///< 検索するRoomID
 } skw_room_find_by_id_params_t;
 
 /// @brief skw_room_find_by_id_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -211,7 +210,7 @@ typedef struct {
 
 /// @brief skw_room_find_by_nameのパラメータ。
 typedef struct {
-    const char* name; ///< 検索するRoomName
+    const char *name; ///< 検索するRoomName
 } skw_room_find_by_name_params_t;
 
 /// @brief skw_room_find_by_name_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -219,8 +218,8 @@ typedef struct {
 
 /// @brief skw_room_find_or_createのパラメータ。
 typedef struct {
-    const char* name;     ///< RoomName
-    const char* metadata; ///< 新規作成時に設定するMetadata
+    const char *name;     ///< RoomName
+    const char *metadata; ///< 新規作成時に設定するMetadata
 } skw_room_find_or_create_params_t;
 
 /// @brief skw_room_find_or_create_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -228,8 +227,8 @@ typedef struct {
 
 /// @brief skw_room_update_metadataのパラメータ。
 typedef struct {
-    const char* id;       ///< 対象のRoomID
-    const char* metadata; ///< 新しいMetadata
+    const char *id;       ///< 対象のRoomID
+    const char *metadata; ///< 新しいMetadata
 } skw_room_update_metadata_params_t;
 
 /// @brief skw_room_update_metadata_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -237,9 +236,9 @@ typedef struct {
 
 /// @brief skw_room_joinのパラメータ。
 typedef struct {
-    const char* id;       ///< JoinするRoomID
-    const char* name;     ///< MemberName（不要ならNULL）
-    const char* metadata; ///< MemberMetadata（不要ならNULL）
+    const char *id;       ///< JoinするRoomID
+    const char *name;     ///< MemberName（不要ならNULL）
+    const char *metadata; ///< MemberMetadata（不要ならNULL）
     uint32_t ttl_sec;     ///< Memberの有効期間（秒）。0を指定するとSKW_ROOM_JOIN_TTL_SEC_DEFAULTを使う
 } skw_room_join_params_t;
 
@@ -250,41 +249,41 @@ typedef struct {
 /// @param params 作成パラメータのポインタ
 /// @param data_fields 作成したRoomの情報を格納する出力先のポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_create(const skw_room_create_params_t* params, skw_room_data_field_t* data_fields);
+skw_room_err_t skw_room_create(const skw_room_create_params_t *params, skw_room_data_field_t *data_fields);
 
 /// @brief IDでRoomを検索します。
 /// @param params 検索パラメータのポインタ
 /// @param data_fields 取得したRoomの情報を格納する出力先のポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_find_by_id(const skw_room_find_by_id_params_t* params, skw_room_data_field_t* data_fields);
+skw_room_err_t skw_room_find_by_id(const skw_room_find_by_id_params_t *params, skw_room_data_field_t *data_fields);
 
 /// @brief NameでRoomを検索します。
 /// @param params 検索パラメータのポインタ
 /// @param data_fields 取得したRoomの情報を格納する出力先のポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_find_by_name(const skw_room_find_by_name_params_t* params, skw_room_data_field_t* data_fields);
+skw_room_err_t skw_room_find_by_name(const skw_room_find_by_name_params_t *params, skw_room_data_field_t *data_fields);
 
 /// @brief NameでRoomを検索し、存在しない場合は新規作成します。
 /// @param params 検索/作成パラメータのポインタ
 /// @param data_fields 取得または作成したRoomの情報を格納する出力先のポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_find_or_create(const skw_room_find_or_create_params_t* params, skw_room_data_field_t* data_fields);
+skw_room_err_t skw_room_find_or_create(const skw_room_find_or_create_params_t *params, skw_room_data_field_t *data_fields);
 
 /// @brief 指定したRoomにLocalPersonとしてJoinします。
 /// @param params Joinパラメータのポインタ
 /// @param data_fields JoinしたMemberの情報を格納する出力先のポインタ（不要ならNULL）。
 /// @return エラーコード
-skw_room_err_t skw_room_join(const skw_room_join_params_t* params, skw_room_member_data_field_t* data_fields);
+skw_room_err_t skw_room_join(const skw_room_join_params_t *params, skw_room_member_data_field_t *data_fields);
 
 /// @brief RoomのMetadataを更新します。
 /// @param params 更新パラメータのポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_update_metadata(const skw_room_update_metadata_params_t* params);
+skw_room_err_t skw_room_update_metadata(const skw_room_update_metadata_params_t *params);
 
 /// @brief Roomのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。
 /// @param handlers Roomのイベント通知を受け取るハンドラのポインタ
 /// @return エラーコード
-skw_room_err_t skw_room_register_handlers(const skw_room_handlers_t* handlers);
+skw_room_err_t skw_room_register_handlers(const skw_room_handlers_t *handlers);
 
 /// @brief 登録済みのイベント通知ハンドラを解除します。
 /// @return エラーコード

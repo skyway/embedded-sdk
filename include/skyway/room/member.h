@@ -9,7 +9,6 @@ extern "C"
 {
 #endif
 
-
 /// @brief MemberIDを格納するバッファのサイズ（NUL終端を含む）。
 #define SKW_ROOM_MEMBER_ID_SIZE (36+1)
 /// @brief MemberNameを格納するバッファのサイズ（NUL終端を含む）。
@@ -74,9 +73,9 @@ typedef struct {
 
 /// @brief skw_room_member_update_metadataのパラメータ。
 typedef struct {
-    const char* room_id;   ///< 対象Memberが所属するRoomID
-    const char* member_id; ///< 対象のMemberID
-    const char* metadata;  ///< 新しいMetadata
+    const char *room_id;   ///< 対象Memberが所属するRoomID
+    const char *member_id; ///< 対象のMemberID
+    const char *metadata;  ///< 新しいMetadata
 } skw_room_member_update_metadata_params_t;
 
 /// @brief skw_room_member_update_metadata_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -84,8 +83,8 @@ typedef struct {
 
 /// @brief skw_room_member_leaveのパラメータ。
 typedef struct {
-    const char* room_id;   ///< 対象Memberが所属するRoomID
-    const char* member_id; ///< 退出させるMemberID
+    const char *room_id;   ///< 対象Memberが所属するRoomID
+    const char *member_id; ///< 退出させるMemberID
 } skw_room_member_leave_params_t;
 
 /// @brief skw_room_member_leave_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -94,12 +93,12 @@ typedef struct {
 /// @brief MemberのMetadataを更新します。
 /// @param params 更新パラメータのポインタ
 /// @return エラーコード
-skw_room_member_err_t skw_room_member_update_metadata(const skw_room_member_update_metadata_params_t* params);
+skw_room_member_err_t skw_room_member_update_metadata(const skw_room_member_update_metadata_params_t *params);
 
 /// @brief MemberをRoomから退出させます。
 /// @param params 退出パラメータのポインタ
 /// @return エラーコード
-skw_room_member_err_t skw_room_member_leave(const skw_room_member_leave_params_t* params);
+skw_room_member_err_t skw_room_member_leave(const skw_room_member_leave_params_t *params);
 
 #ifdef __cplusplus
 }

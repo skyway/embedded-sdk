@@ -36,7 +36,7 @@ typedef enum {
 /// @param tag ログのタグ
 /// @param format printf形式のフォーマット文字列
 /// @param args フォーマットに対応する可変引数リスト
-typedef void (*skw_logger_on_message_t)(skw_logger_log_level_t level, const char* tag, const char* format, va_list args);
+typedef void (*skw_logger_on_message_t)(skw_logger_log_level_t level, const char *tag, const char *format, va_list args);
 
 /// @brief Loggerのハンドラ。
 typedef struct {
@@ -46,7 +46,7 @@ typedef struct {
 /// @brief Loggerの出力を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。
 /// @param handlers Loggerのハンドラのポインタ
 /// @return エラーコード
-skw_logger_err_t skw_logger_register_handlers(const skw_logger_handlers_t* handlers);
+skw_logger_err_t skw_logger_register_handlers(const skw_logger_handlers_t *handlers);
 
 /// @brief 登録済みのLogger出力ハンドラを解除します。
 /// @return エラーコード

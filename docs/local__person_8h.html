@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -149,18 +149,21 @@ $(function(){initNavTree('local__person_8h.html','',''); });
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f">SKW_ROOM_LOCAL_PERSON_ERR_STREAM_FAILED</a> = 15
 , <br />
 &#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347">SKW_ROOM_LOCAL_PERSON_ERR_VIDEO_SUBSCRIBE_DISABLED</a> = 16
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2af33b19c48f60ab01f7cfc341b797a7db">SKW_ROOM_LOCAL_PERSON_ERR_CLEANUP_FAILED</a> = 17
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a8c33aa2d02d7a9a7d1d6da851d524b22">SKW_ROOM_LOCAL_PERSON_ERR_SUBSCRIPTION_LIMIT</a> = 18
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9">SKW_ROOM_LOCAL_PERSON_ERR_NOT_SUPPORTED</a> = 90
-, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ae72106e89a11450268f7327f81183441">SKW_ROOM_LOCAL_PERSON_ERR_UNKNOWN</a> = 99
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2ae72106e89a11450268f7327f81183441">SKW_ROOM_LOCAL_PERSON_ERR_UNKNOWN</a> = 99
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2a06310bc853198d018e07a953c4ec6c06">SKW_ROOM_LOCAL_PERSON_ERR_BAD_REQUEST</a> = 400
-, <br />
-&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a0b07e026c37f2ec819ed09d3c19f8873">SKW_ROOM_LOCAL_PERSON_ERR_UNAUTHORIZED</a> = 401
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a0b07e026c37f2ec819ed09d3c19f8873">SKW_ROOM_LOCAL_PERSON_ERR_UNAUTHORIZED</a> = 401
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab9a880c477ee9192ec5efbd8f17a3656">SKW_ROOM_LOCAL_PERSON_ERR_FORBIDDEN</a> = 403
-, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a00b1a4d310ef02a1b488958dad8d053d">SKW_ROOM_LOCAL_PERSON_ERR_NOT_FOUND</a> = 404
-, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab2d9a028cc8adbbfe558e82f7b7adde2">SKW_ROOM_LOCAL_PERSON_ERR_ALREADY_EXIST</a> = 409
 , <br />
-&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a6512d8855f9697134867a13b9797c68c">SKW_ROOM_LOCAL_PERSON_ERR_TOO_LARGE</a> = 413
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2a00b1a4d310ef02a1b488958dad8d053d">SKW_ROOM_LOCAL_PERSON_ERR_NOT_FOUND</a> = 404
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab2d9a028cc8adbbfe558e82f7b7adde2">SKW_ROOM_LOCAL_PERSON_ERR_ALREADY_EXIST</a> = 409
+, <a class="el" href="#aff82659b650c4010df859f9144bb58a2a6512d8855f9697134867a13b9797c68c">SKW_ROOM_LOCAL_PERSON_ERR_TOO_LARGE</a> = 413
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2ab1e25ea37e23b2d90469aa7cd08183ea">SKW_ROOM_LOCAL_PERSON_ERR_TOO_MANY_REQUESTS</a> = 429
-, <a class="el" href="#aff82659b650c4010df859f9144bb58a2aad91160a51949cfcfb4765432889cd5b">SKW_ROOM_LOCAL_PERSON_ERR_SERVER_INTERNAL</a> = 500
+, <br />
+&#160;&#160;<a class="el" href="#aff82659b650c4010df859f9144bb58a2aad91160a51949cfcfb4765432889cd5b">SKW_ROOM_LOCAL_PERSON_ERR_SERVER_INTERNAL</a> = 500
 , <a class="el" href="#aff82659b650c4010df859f9144bb58a2a848f638e0ffd19f66486ffaaa42a0690">SKW_ROOM_LOCAL_PERSON_ERR_SERVER_BUSY</a> = 503
 <br />
  }</td></tr>
@@ -308,6 +311,10 @@ $(function(){initNavTree('local__person_8h.html','',''); });
 <tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f" name="aff82659b650c4010df859f9144bb58a2a5a138f9993c66cc3a5282a5d8317ea7f"></a>SKW_ROOM_LOCAL_PERSON_ERR_STREAM_FAILED&#160;</td><td class="fielddoc"><p>Streamの確立に失敗した </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347" name="aff82659b650c4010df859f9144bb58a2a3feb58545e26110a694c33cd29750347"></a>SKW_ROOM_LOCAL_PERSON_ERR_VIDEO_SUBSCRIBE_DISABLED&#160;</td><td class="fielddoc"><p>VideoのSubscribeが無効（Contextのオプションで許可していない） </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2af33b19c48f60ab01f7cfc341b797a7db" name="aff82659b650c4010df859f9144bb58a2af33b19c48f60ab01f7cfc341b797a7db"></a>SKW_ROOM_LOCAL_PERSON_ERR_CLEANUP_FAILED&#160;</td><td class="fielddoc"><p>SDK内の後始末（実行中のハンドラが戻るのを待つ等）を完了できなかった（Unpublish/Unsubscribeはサーバー上では完了している。Subscribeは失敗している）。対象のハンドラはまだ呼ばれる可能性がある </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a8c33aa2d02d7a9a7d1d6da851d524b22" name="aff82659b650c4010df859f9144bb58a2a8c33aa2d02d7a9a7d1d6da851d524b22"></a>SKW_ROOM_LOCAL_PERSON_ERR_SUBSCRIPTION_LIMIT&#160;</td><td class="fielddoc"><p>Subscribeできる数の上限を超過 </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9" name="aff82659b650c4010df859f9144bb58a2a88f37f476349aa9c2c7d2496b9eff0d9"></a>SKW_ROOM_LOCAL_PERSON_ERR_NOT_SUPPORTED&#160;</td><td class="fielddoc"><p>未サポートの機能の呼び出し </p>
 </td></tr>

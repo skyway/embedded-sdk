@@ -15,7 +15,6 @@ extern "C"
 #include "skyway/room/member.h"
 #include "skyway/room/publication.h"
 
-
 /// @brief SubscriptionIDを格納するバッファのサイズ（NUL終端を含む）。
 #define SKW_ROOM_SUBSCRIPTION_ID_SIZE (36+1)
 
@@ -61,7 +60,7 @@ typedef struct {
 /// @param publication_id 対象のPublicationのID
 /// @param data 受信したデータ（呼び出し中のみ有効）
 /// @param length 受信したデータの長さ（バイト数）
-typedef void (*skw_room_subscription_on_data_t)(const char* subscription_id, const char* publication_id, const uint8_t* data, size_t length);
+typedef void (*skw_room_subscription_on_data_t)(const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length);
 
 /// @brief SubscribeしているStreamからエンコード済み映像フレーム（H.264）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。
 /// @param subscription_id 対象のSubscriptionのID
@@ -69,7 +68,7 @@ typedef void (*skw_room_subscription_on_data_t)(const char* subscription_id, con
 /// @param data 受信したフレームデータ（呼び出し中のみ有効）
 /// @param length 受信したフレームデータの長さ（バイト数）
 /// @param pts フレームの表示タイムスタンプ（ミリ秒）
-typedef void (*skw_room_subscription_on_video_frame_t)(const char* subscription_id, const char* publication_id, const uint8_t* data, size_t length, uint32_t pts);
+typedef void (*skw_room_subscription_on_video_frame_t)(const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts);
 
 /// @brief SubscribeしているStreamからエンコード済み音声フレーム（Opus）を受信したときに呼ばれます。ハンドラ内からunsubscribe等の破棄を伴うAPIとsubscribeは呼び出せません。
 /// @param subscription_id 対象のSubscriptionのID
@@ -77,19 +76,19 @@ typedef void (*skw_room_subscription_on_video_frame_t)(const char* subscription_
 /// @param data 受信したフレームデータ（呼び出し中のみ有効）
 /// @param length 受信したフレームデータの長さ（バイト数）
 /// @param pts フレームの表示タイムスタンプ（ミリ秒）
-typedef void (*skw_room_subscription_on_audio_frame_t)(const char* subscription_id, const char* publication_id, const uint8_t* data, size_t length, uint32_t pts);
+typedef void (*skw_room_subscription_on_audio_frame_t)(const char *subscription_id, const char *publication_id, const uint8_t *data, size_t length, uint32_t pts);
 
 /// @brief Subscriptionの各イベント通知を受け取るハンドラ。不要なイベントのフィールドはNULLにできる。
 typedef struct {
-    skw_room_subscription_on_data_t on_data;               ///< データの受信時
-    skw_room_subscription_on_video_frame_t on_video_frame; ///< 映像フレームの受信時
-    skw_room_subscription_on_audio_frame_t on_audio_frame; ///< 音声フレームの受信時
+    skw_room_subscription_on_data_t on_data;               ///< データの受信時。重い処理は別のタスクで行ってください。
+    skw_room_subscription_on_video_frame_t on_video_frame; ///< 映像フレームの受信時。デコードなどの重い処理は別のタスクで行ってください。
+    skw_room_subscription_on_audio_frame_t on_audio_frame; ///< 音声フレームの受信時。デコードなどの重い処理は別のタスクで行ってください。
 } skw_room_subscription_handlers_t;
 
 /// @brief Subscriptionのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。
 /// @param handlers Subscriptionのイベント通知を受け取るハンドラのポインタ
 /// @return エラーコード
-skw_room_subscription_err_t skw_room_subscription_register_handlers(const skw_room_subscription_handlers_t* handlers);
+skw_room_subscription_err_t skw_room_subscription_register_handlers(const skw_room_subscription_handlers_t *handlers);
 
 /// @brief 登録済みのイベント通知ハンドラを解除します。
 /// @return エラーコード
