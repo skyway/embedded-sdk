@@ -14,7 +14,6 @@ extern "C"
 
 #include "skyway/room/member.h"
 
-
 /// @brief PublicationIDを格納するバッファのサイズ（NUL終端を含む）。
 #define SKW_ROOM_PUBLICATION_ID_SIZE (36+1)
 
@@ -80,9 +79,9 @@ typedef struct {
 
 /// @brief skw_room_publication_update_metadataのパラメータ。
 typedef struct {
-    const char* room_id;        ///< 対象Publicationが属するRoomID
-    const char* publication_id; ///< 対象のPublicationID
-    const char* metadata;       ///< 新しいMetadata
+    const char *room_id;        ///< 対象Publicationが属するRoomID
+    const char *publication_id; ///< 対象のPublicationID
+    const char *metadata;       ///< 新しいMetadata
 } skw_room_publication_update_metadata_params_t;
 
 /// @brief skw_room_publication_update_metadata_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -90,8 +89,8 @@ typedef struct {
 
 /// @brief skw_room_publication_send_dataのパラメータ。
 typedef struct {
-    const char* publication_id; ///< PublishしたDataStreamのPublicationID
-    const uint8_t* data;        ///< 送信するデータ
+    const char *publication_id; ///< PublishしたDataStreamのPublicationID
+    const uint8_t *data;        ///< 送信するデータ
     size_t length;              ///< 送信するデータの長さ（バイト数）
 } skw_room_publication_send_data_params_t;
 
@@ -100,8 +99,8 @@ typedef struct {
 
 /// @brief skw_room_publication_send_video_frame/send_audio_frameのパラメータ。
 typedef struct {
-    const char* publication_id; ///< PublishしたVideo/AudioStreamのPublicationID
-    const uint8_t* data;        ///< 送信するエンコード済みフレーム（Video: H.264 / Audio: Opus）
+    const char *publication_id; ///< PublishしたVideo/AudioStreamのPublicationID
+    const uint8_t *data;        ///< 送信するエンコード済みフレーム（Video: H.264 / Audio: Opus）
     size_t length;              ///< 送信するフレームの長さ（バイト数）
     uint32_t pts;               ///< フレームの表示タイムスタンプ（ミリ秒）
 } skw_room_publication_send_frame_params_t;
@@ -111,7 +110,7 @@ typedef struct {
 
 /// @brief キーフレームの生成要求を受け取るハンドラ。subscriberが映像を復号できないときに呼ばれます。
 /// @param publication_id 要求されたPublicationのID
-typedef void (*skw_room_publication_on_keyframe_request_t)(const char* publication_id);
+typedef void (*skw_room_publication_on_keyframe_request_t)(const char *publication_id);
 
 /// @brief Publicationの各イベント通知を受け取るハンドラ。不要なイベントのフィールドはNULLにできる。
 typedef struct {
@@ -121,7 +120,7 @@ typedef struct {
 /// @brief Publicationのイベント通知を受け取るハンドラを登録します。登録できる集合は単一で、再登録すると上書きされます。
 /// @param handlers Publicationのイベント通知を受け取るハンドラのポインタ
 /// @return エラーコード
-skw_room_publication_err_t skw_room_publication_register_handlers(const skw_room_publication_handlers_t* handlers);
+skw_room_publication_err_t skw_room_publication_register_handlers(const skw_room_publication_handlers_t *handlers);
 
 /// @brief 登録済みのイベント通知ハンドラを解除します。
 /// @return エラーコード
@@ -130,25 +129,25 @@ skw_room_publication_err_t skw_room_publication_unregister_handlers(void);
 /// @brief PublicationのMetadataを更新します。
 /// @param params 更新パラメータのポインタ
 /// @return エラーコード
-skw_room_publication_err_t skw_room_publication_update_metadata(const skw_room_publication_update_metadata_params_t* params);
+skw_room_publication_err_t skw_room_publication_update_metadata(const skw_room_publication_update_metadata_params_t *params);
 
 /// @brief PublishしたDataStreamへデータを送信します。Streamが確立している全subscriberへ送信されます。
 ///        subscriberがいない場合は何も送信せずに成功を返します。
 /// @param params 送信パラメータのポインタ
 /// @return エラーコード
-skw_room_publication_err_t skw_room_publication_send_data(const skw_room_publication_send_data_params_t* params);
+skw_room_publication_err_t skw_room_publication_send_data(const skw_room_publication_send_data_params_t *params);
 
 /// @brief PublishしたVideoStreamへエンコード済みフレーム（H.264）を送信します。Streamが確立している全subscriberへ送信されます。
 ///        subscriberがいない場合は何も送信せずに成功を返します。
 /// @param params 送信パラメータのポインタ
 /// @return エラーコード
-skw_room_publication_err_t skw_room_publication_send_video_frame(const skw_room_publication_send_frame_params_t* params);
+skw_room_publication_err_t skw_room_publication_send_video_frame(const skw_room_publication_send_frame_params_t *params);
 
 /// @brief PublishしたAudioStreamへエンコード済みフレーム（Opus）を送信します。Streamが確立している全subscriberへ送信されます。
 ///        subscriberがいない場合は何も送信せずに成功を返します。
 /// @param params 送信パラメータのポインタ
 /// @return エラーコード
-skw_room_publication_err_t skw_room_publication_send_audio_frame(const skw_room_publication_send_frame_params_t* params);
+skw_room_publication_err_t skw_room_publication_send_audio_frame(const skw_room_publication_send_frame_params_t *params);
 
 #ifdef __cplusplus
 }

@@ -40,6 +40,7 @@ typedef enum {
     SKW_CONTEXT_ERR_SIGNALING_NOT_ACTIVE     = 18,  ///< シグナリングのセッションが確立していない
     SKW_CONTEXT_ERR_SIGNALING_DISCONNECTED   = 19,  ///< シグナリングが切断された（復帰はdispose後のsetup/join）
     SKW_CONTEXT_ERR_SIGNALING_FAILED         = 20,  ///< シグナリングの操作に失敗
+    SKW_CONTEXT_ERR_INVALID_OPTIONS          = 21,  ///< オプションの値が不正
     SKW_CONTEXT_ERR_UNKNOWN                  = 99,  ///< 不明なエラー
     SKW_CONTEXT_ERR_BAD_REQUEST              = 400, ///< 不正なリクエスト
     SKW_CONTEXT_ERR_UNAUTHORIZED             = 401, ///< AuthTokenが不正、もしくは有効期限切れ
@@ -65,6 +66,13 @@ typedef struct {
     struct {
         bool enable_video_subscribe; ///< VideoのSubscribeを許可します。Videoの受信は通信処理の負荷が高く注意が必要です。
     } experimental;
+
+    /// @brief SDKが内部で動かすタスクの優先度。0を指定した項目は既定値を使用します。
+    ///        dataはcontrolより低くしてください。片方だけを指定した場合も既定値と比べ、dataがcontrol以上なら警告を出します。
+    struct {
+        uint32_t control; ///< サーバーとの接続を維持するタスクの優先度。既定は7です。
+        uint32_t data;    ///< 通信相手とのデータ送受信を処理するタスクの優先度。既定は6です。
+    } task_priority;
 } skw_context_setup_options_t;
 
 /// @brief Contextを初期化します。他のAPIを利用する前に最初に一度呼び出す必要があります。
@@ -76,7 +84,7 @@ skw_context_err_t skw_context_init(void);
 /// @param auth_token 認証に使用するAuthTokenのポインタ
 /// @param options 初期化時に利用するオプションのポインタ
 /// @return エラーコード
-skw_context_err_t skw_context_setup(skw_auth_token_t* auth_token, skw_context_setup_options_t* options);
+skw_context_err_t skw_context_setup(skw_auth_token_t *auth_token, skw_context_setup_options_t *options);
 
 /// @brief SkyWayサーバーとの通信を切断、確保したリソースを解放します。
 /// @return エラーコード
@@ -85,7 +93,7 @@ skw_context_err_t skw_context_dispose(void);
 /// @brief 認証に使用するAuthTokenを新しいAuthTokenへ更新します。
 /// @param auth_token 新しいAuthTokenのポインタ
 /// @return エラーコード
-skw_context_err_t skw_context_update_auth_token(skw_auth_token_t* auth_token);
+skw_context_err_t skw_context_update_auth_token(skw_auth_token_t *auth_token);
 
 #ifdef __cplusplus
 }

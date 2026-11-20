@@ -34,6 +34,8 @@ typedef enum {
     SKW_ROOM_LOCAL_PERSON_ERR_NOT_JOINED               = 14,  ///< LocalPersonが存在しない
     SKW_ROOM_LOCAL_PERSON_ERR_STREAM_FAILED            = 15,  ///< Streamの確立に失敗した
     SKW_ROOM_LOCAL_PERSON_ERR_VIDEO_SUBSCRIBE_DISABLED = 16,  ///< VideoのSubscribeが無効（Contextのオプションで許可していない）
+    SKW_ROOM_LOCAL_PERSON_ERR_CLEANUP_FAILED           = 17,  ///< SDK内の後始末（実行中のハンドラが戻るのを待つ等）を完了できなかった（Unpublish/Unsubscribeはサーバー上では完了している。Subscribeは失敗している）。対象のハンドラはまだ呼ばれる可能性がある
+    SKW_ROOM_LOCAL_PERSON_ERR_SUBSCRIPTION_LIMIT       = 18,  ///< Subscribeできる数の上限を超過
     SKW_ROOM_LOCAL_PERSON_ERR_NOT_SUPPORTED            = 90,  ///< 未サポートの機能の呼び出し
     SKW_ROOM_LOCAL_PERSON_ERR_UNKNOWN                  = 99,  ///< 不明なエラー
     SKW_ROOM_LOCAL_PERSON_ERR_BAD_REQUEST              = 400, ///< リクエストパラメータが不正
@@ -49,11 +51,11 @@ typedef enum {
 
 /// @brief skw_room_local_person_publishのパラメータ。
 typedef struct {
-    const char* room_id;                                ///< PublishするRoomID
-    const char* member_id;                              ///< PublishするMember（LocalPerson）のID
+    const char *room_id;                                ///< PublishするRoomID
+    const char *member_id;                              ///< PublishするMember（LocalPerson）のID
     skw_room_publication_content_type_t content_type;   ///< コンテンツ種別（Video/Audio/Data）
     skw_room_publication_type_t type;                   ///< 配信方式
-    const char* metadata;                               ///< PublicationMetadata
+    const char *metadata;                               ///< PublicationMetadata
 } skw_room_local_person_publish_params_t;
 
 /// @brief skw_room_local_person_publish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -61,8 +63,8 @@ typedef struct {
 
 /// @brief skw_room_local_person_unpublishのパラメータ。
 typedef struct {
-    const char* room_id;        ///< 対象のRoomID
-    const char* publication_id; ///< UnpublishするPublicationのID
+    const char *room_id;        ///< 対象のRoomID
+    const char *publication_id; ///< UnpublishするPublicationのID
 } skw_room_local_person_unpublish_params_t;
 
 /// @brief skw_room_local_person_unpublish_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -70,9 +72,9 @@ typedef struct {
 
 /// @brief skw_room_local_person_subscribeのパラメータ。
 typedef struct {
-    const char* room_id;        ///< SubscribeするRoomID
-    const char* member_id;      ///< SubscribeするMember（LocalPerson）のID
-    const char* publication_id; ///< Subscribe対象のPublicationのID
+    const char *room_id;        ///< SubscribeするRoomID
+    const char *member_id;      ///< SubscribeするMember（LocalPerson）のID
+    const char *publication_id; ///< Subscribe対象のPublicationのID
 } skw_room_local_person_subscribe_params_t;
 
 /// @brief skw_room_local_person_subscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -80,8 +82,8 @@ typedef struct {
 
 /// @brief skw_room_local_person_unsubscribeのパラメータ。
 typedef struct {
-    const char* room_id;         ///< 対象のRoomID
-    const char* subscription_id; ///< UnsubscribeするSubscriptionのID
+    const char *room_id;         ///< 対象のRoomID
+    const char *subscription_id; ///< UnsubscribeするSubscriptionのID
 } skw_room_local_person_unsubscribe_params_t;
 
 /// @brief skw_room_local_person_unsubscribe_params_tの初期化子。指定しなかったフィールドには既定値が入ります。
@@ -91,24 +93,24 @@ typedef struct {
 /// @param params Publishパラメータのポインタ
 /// @param data_fields PublishされたPublicationの情報を格納する出力先のポインタ（不要ならNULL）。
 /// @return エラーコード
-skw_room_local_person_err_t skw_room_local_person_publish(const skw_room_local_person_publish_params_t* params, skw_room_publication_data_field_t* data_fields);
+skw_room_local_person_err_t skw_room_local_person_publish(const skw_room_local_person_publish_params_t *params, skw_room_publication_data_field_t *data_fields);
 
 /// @brief PublishしているStreamをUnpublishします。
 /// @param params Unpublishパラメータのポインタ
 /// @return エラーコード
-skw_room_local_person_err_t skw_room_local_person_unpublish(const skw_room_local_person_unpublish_params_t* params);
+skw_room_local_person_err_t skw_room_local_person_unpublish(const skw_room_local_person_unpublish_params_t *params);
 
 /// @brief PublicationをSubscribeし、Streamが利用可能になるまでブロックします（最大60秒）。
 ///        タイムアウト・確立失敗時はSubscriptionを自動でUnsubscribeします。
 /// @param params Subscribeパラメータのポインタ
 /// @param data_fields SubscribeされたSubscriptionの情報を格納する出力先のポインタ（不要ならNULL）。
 /// @return エラーコード
-skw_room_local_person_err_t skw_room_local_person_subscribe(const skw_room_local_person_subscribe_params_t* params, skw_room_subscription_data_field_t* data_fields);
+skw_room_local_person_err_t skw_room_local_person_subscribe(const skw_room_local_person_subscribe_params_t *params, skw_room_subscription_data_field_t *data_fields);
 
 /// @brief SubscribeしているStreamをUnsubscribeします。
 /// @param params Unsubscribeパラメータのポインタ
 /// @return エラーコード
-skw_room_local_person_err_t skw_room_local_person_unsubscribe(const skw_room_local_person_unsubscribe_params_t* params);
+skw_room_local_person_err_t skw_room_local_person_unsubscribe(const skw_room_local_person_unsubscribe_params_t *params);
 
 #ifdef __cplusplus
 }

@@ -16,7 +16,7 @@
 #include <nvs_flash.h>
 #include <sdkconfig.h>
 
-static const char* TAG = "quickstart";
+static const char *TAG = "quickstart";
 
 // Wi-Fi接続の待ち時間（ミリ秒）と再試行回数。
 #define WIFI_CONNECT_TIMEOUT_MS (30U * 1000U)
@@ -37,8 +37,8 @@ static const char* TAG = "quickstart";
 static EventGroupHandle_t s_wifi_events = NULL;
 
 // Wi-Fiイベントハンドラ。
-static void wifi_event_handler(void* handler_args, esp_event_base_t event_base,
-                               int32_t event_id, void* event_data)
+static void wifi_event_handler(void *handler_args, esp_event_base_t event_base,
+                               int32_t event_id, void *event_data)
 {
     (void)handler_args;
     (void)event_data;
@@ -86,9 +86,9 @@ static bool wifi_connect(void)
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 
     wifi_config_t wifi_config = {0};
-    (void)strlcpy((char*)wifi_config.sta.ssid, CONFIG_SKYWAY_QUICKSTART_WIFI_SSID,
+    (void)strlcpy((char *)wifi_config.sta.ssid, CONFIG_SKYWAY_QUICKSTART_WIFI_SSID,
                   sizeof(wifi_config.sta.ssid));
-    (void)strlcpy((char*)wifi_config.sta.password, CONFIG_SKYWAY_QUICKSTART_WIFI_PASSWORD,
+    (void)strlcpy((char *)wifi_config.sta.password, CONFIG_SKYWAY_QUICKSTART_WIFI_PASSWORD,
                   sizeof(wifi_config.sta.password));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
     ESP_ERROR_CHECK(esp_wifi_start());

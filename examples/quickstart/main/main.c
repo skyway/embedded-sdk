@@ -23,13 +23,13 @@
 #include "media_dummy.h"
 #include "network.h"
 
-static const char* TAG = "quickstart";
+static const char *TAG = "quickstart";
 
 // アプリ本体のタスクのスタックサイズ（バイト）と優先度。Subscribeを行うタスクも同じ値を使います。
 #define APP_TASK_STACK_SIZE (16384U)
 #define APP_TASK_PRIORITY (1U)
 
-// 映像・音声の送信タスクのスタックサイズ（バイト）と優先度。送信を優先するため、SkyWay Embedded SDKの既定（優先度4）より高くします。
+// 映像・音声の送信タスクのスタックサイズ（バイト）と優先度。優先度はSkyWay Embedded SDKより低くする必要があるため5以下にします。
 #define SEND_TASK_STACK_SIZE (4096U)
 #define SEND_TASK_PRIORITY (5U)
 
@@ -54,13 +54,13 @@ static QueueHandle_t s_subscribe_queue = NULL;
 
 // 映像・音声の送信タスクに渡す、ダミーStreamの送り方。
 typedef struct {
-    const char* task_name;
-    const uint8_t* data;                                                                    // フレームデータの先頭
-    const media_dummy_frame_info_t* frames;                                                 // 各フレームの位置
-    const uint32_t* frame_count;
+    const char *task_name;
+    const uint8_t *data;                                                                    // フレームデータの先頭
+    const media_dummy_frame_info_t *frames;                                                 // 各フレームの位置
+    const uint32_t *frame_count;
     uint32_t interval_ms;                                                                   // フレーム間隔
-    const skw_room_publication_id_t* publication_id;
-    skw_room_publication_err_t (*send)(const skw_room_publication_send_frame_params_t* params);
+    const skw_room_publication_id_t *publication_id;
+    skw_room_publication_err_t (*send)(const skw_room_publication_send_frame_params_t *params);
 } media_sender_t;
 static const media_sender_t s_video_sender = {
     "video", g_media_dummy_video_data, g_media_dummy_video_frames, &g_media_dummy_video_frame_count,
@@ -116,8 +116,8 @@ static bool room_join(void)
 
     // menuconfigで指定したルームを検索する。ルームが存在しなければ作成する。
     const skw_room_find_or_create_params_t room_params = SKW_ROOM_FIND_OR_CREATE_PARAMS_INIT(
-        .name = CONFIG_SKYWAY_QUICKSTART_ROOM_NAME
-    );
+                                                             .name = CONFIG_SKYWAY_QUICKSTART_ROOM_NAME
+                                                         );
     const skw_room_err_t room_err = skw_room_find_or_create(&room_params, &room_fields);
     if (room_err != SKW_ROOM_OK) {
         ESP_LOGE(TAG, "Failed to find or create the room: %d", (int)room_err);
@@ -130,9 +130,9 @@ static bool room_join(void)
             continue;
         }
         const skw_room_member_leave_params_t leave_params = SKW_ROOM_MEMBER_LEAVE_PARAMS_INIT(
-            .room_id = s_room_id,
-            .member_id = member_ids[i]
-        );
+                                                                .room_id = s_room_id,
+                                                                .member_id = member_ids[i]
+                                                            );
         if (skw_room_member_leave(&leave_params) == SKW_ROOM_MEMBER_OK) {
             ESP_LOGI(TAG, "Left an existing member. name=%s member_id=%s", member_names[i], member_ids[i]);
         }
@@ -144,9 +144,9 @@ static bool room_join(void)
 
     // menuconfigで指定した名前でルームに参加します。
     const skw_room_join_params_t join_params = SKW_ROOM_JOIN_PARAMS_INIT(
-        .id = s_room_id,
-        .name = CONFIG_SKYWAY_QUICKSTART_MEMBER_NAME
-    );
+                                                   .id = s_room_id,
+                                                   .name = CONFIG_SKYWAY_QUICKSTART_MEMBER_NAME
+                                               );
     if (skw_room_join(&join_params, &member_fields) != SKW_ROOM_OK) {
         ESP_LOGE(TAG, "Failed to join the room.");
         return false;
@@ -157,7 +157,7 @@ static bool room_join(void)
 
 // 指定した種別のStreamをPublishする関数。
 static bool publish_stream(skw_room_publication_content_type_t content_type,
-                           skw_room_publication_id_t* out_publication_id)
+                           skw_room_publication_id_t *out_publication_id)
 {
     skw_room_publication_data_field_t fields = {
         .id = out_publication_id,
@@ -165,11 +165,11 @@ static bool publish_stream(skw_room_publication_content_type_t content_type,
 
     // 指定したcontent_typeのStreamをPublishします。
     const skw_room_local_person_publish_params_t params = SKW_ROOM_LOCAL_PERSON_PUBLISH_PARAMS_INIT(
-        .room_id = s_room_id,
-        .member_id = s_member_id,
-        .content_type = content_type,
-        .type = SKW_ROOM_PUBLICATION_TYPE_P2P
-    );
+                                                              .room_id = s_room_id,
+                                                              .member_id = s_member_id,
+                                                              .content_type = content_type,
+                                                              .type = SKW_ROOM_PUBLICATION_TYPE_P2P
+                                                          );
     if (skw_room_local_person_publish(&params, &fields) != SKW_ROOM_LOCAL_PERSON_OK) {
         ESP_LOGE(TAG, "Failed to publish. content_type=%d", (int)content_type);
         return false;
@@ -180,21 +180,21 @@ static bool publish_stream(skw_room_publication_content_type_t content_type,
 }
 
 // ダミーの映像・音声Streamを繰り返し送信するタスク。引数のmedia_sender_tで送り方を切り替えます。
-static void media_send_task(void* pvParameters)
+static void media_send_task(void *pvParameters)
 {
-    const media_sender_t* sender = (const media_sender_t*)pvParameters;
+    const media_sender_t *sender = (const media_sender_t *)pvParameters;
     TickType_t last_wake = xTaskGetTickCount();
     uint32_t index = 0U;
     uint32_t pts_ms = 0U;
 
     while (true) {
-        const media_dummy_frame_info_t* frame = &sender->frames[index];
+        const media_dummy_frame_info_t *frame = &sender->frames[index];
         const skw_room_publication_send_frame_params_t params = SKW_ROOM_PUBLICATION_SEND_FRAME_PARAMS_INIT(
-            .publication_id = *sender->publication_id,
-            .data = &sender->data[frame->offset],
-            .length = frame->size,
-            .pts = pts_ms
-        );
+                                                                    .publication_id = *sender->publication_id,
+                                                                    .data = &sender->data[frame->offset],
+                                                                    .length = frame->size,
+                                                                    .pts = pts_ms
+                                                                );
         const skw_room_publication_err_t err = sender->send(&params);
         if (err != SKW_ROOM_PUBLICATION_OK) {
             ESP_LOGW(TAG, "Failed to send a %s frame: %d", sender->task_name, (int)err);
@@ -206,7 +206,7 @@ static void media_send_task(void* pvParameters)
 }
 
 // 指定したDataStreamのPublicationへメッセージを送る関数。
-static void send_data_message(const char* publication_id, uint32_t message_count)
+static void send_data_message(const char *publication_id, uint32_t message_count)
 {
     char message[DATA_MESSAGE_SIZE];
     const int32_t length = snprintf(message, sizeof(message), DATA_MESSAGE_PREFIX "%u", (unsigned int)message_count);
@@ -217,10 +217,10 @@ static void send_data_message(const char* publication_id, uint32_t message_count
 
     // 指定したDataStreamへメッセージを送信します。
     const skw_room_publication_send_data_params_t params = SKW_ROOM_PUBLICATION_SEND_DATA_PARAMS_INIT(
-        .publication_id = publication_id,
-        .data = (const uint8_t*)message,
-        .length = (size_t)length
-    );
+                                                               .publication_id = publication_id,
+                                                               .data = (const uint8_t *)message,
+                                                               .length = (size_t)length
+                                                           );
     const skw_room_publication_err_t err = skw_room_publication_send_data(&params);
     if (err != SKW_ROOM_PUBLICATION_OK) {
         ESP_LOGW(TAG, "Failed to send the data: %d", (int)err);
@@ -232,7 +232,7 @@ static void send_data_message(const char* publication_id, uint32_t message_count
 // --------------------------
 
 // キューから取り出したPublicationを順にSubscribeするタスクです。
-static void subscribe_task(void* pvParameters)
+static void subscribe_task(void *pvParameters)
 {
     (void)pvParameters;
 
@@ -246,10 +246,10 @@ static void subscribe_task(void* pvParameters)
             .id = &subscription_id,
         };
         const skw_room_local_person_subscribe_params_t params = SKW_ROOM_LOCAL_PERSON_SUBSCRIBE_PARAMS_INIT(
-            .room_id = s_room_id,
-            .member_id = s_member_id,
-            .publication_id = publication_id
-        );
+                                                                    .room_id = s_room_id,
+                                                                    .member_id = s_member_id,
+                                                                    .publication_id = publication_id
+                                                                );
         // 失敗時（受信の上限超過、Videoが無効、確立できず等）はSkyWay Embedded SDKがSubscriptionを解除します。
         if (skw_room_local_person_subscribe(&params, &fields) == SKW_ROOM_LOCAL_PERSON_OK) {
             ESP_LOGI(TAG, "Subscribed. subscription_id=%s publication_id=%s", subscription_id, publication_id);
@@ -260,7 +260,7 @@ static void subscribe_task(void* pvParameters)
 }
 
 // SubscribeするPublicationをキューへ積む関数。
-static void enqueue_subscribe(const char* publication_id)
+static void enqueue_subscribe(const char *publication_id)
 {
     skw_room_publication_id_t queued_id = {0};
     (void)strlcpy(queued_id, publication_id, sizeof(queued_id));
@@ -307,8 +307,8 @@ static void subscribe_existing_publications(void)
 
     // 参加しているRoomのPublicationを取得します。
     const skw_room_find_by_id_params_t room_params = SKW_ROOM_FIND_BY_ID_PARAMS_INIT(
-        .id = s_room_id
-    );
+                                                         .id = s_room_id
+                                                     );
     const skw_room_err_t list_err = skw_room_find_by_id(&room_params, &room_fields);
     if (list_err != SKW_ROOM_OK) {
         ESP_LOGE(TAG, "Failed to list the publications: %d", (int)list_err);
@@ -328,21 +328,21 @@ static void subscribe_existing_publications(void)
 // --------------------------
 
 // Memberが参加したときに呼ばれるイベント。
-static void on_member_joined(const char* room_id, const char* member_id)
+static void on_member_joined(const char *room_id, const char *member_id)
 {
     (void)room_id;
     ESP_LOGI(TAG, "Member joined. member_id=%s", member_id);
 }
 
 // Memberが退出したときに呼ばれるイベント。
-static void on_member_left(const char* room_id, const char* member_id)
+static void on_member_left(const char *room_id, const char *member_id)
 {
     (void)room_id;
     ESP_LOGI(TAG, "Member left. member_id=%s", member_id);
 }
 
 // StreamがPublishされたときに呼ばれるイベント。このサンプルはDataだけをSubscribeします。
-static void on_stream_published(const char* room_id, const char* publication_id, const char* publisher_id,
+static void on_stream_published(const char *room_id, const char *publication_id, const char *publisher_id,
                                 skw_room_publication_content_type_t content_type)
 {
     (void)room_id;
@@ -353,12 +353,12 @@ static void on_stream_published(const char* room_id, const char* publication_id,
 }
 
 // DataStreamでデータを受信したときに呼ばれるイベント。
-static void on_data_received(const char* subscription_id, const char* publication_id,
-                             const uint8_t* data, size_t length)
+static void on_data_received(const char *subscription_id, const char *publication_id,
+                             const uint8_t *data, size_t length)
 {
     (void)subscription_id;
     ESP_LOGI(TAG, "Received data. publication_id=%s data=%.*s length=%u bytes",
-             publication_id, (int)length, (const char*)data, (unsigned int)length);
+             publication_id, (int)length, (const char *)data, (unsigned int)length);
 }
 
 // 上のイベントハンドラをSkyWay Embedded SDKへ登録する関数。
@@ -388,7 +388,7 @@ static bool register_handlers(void)
 // --------------------------
 
 // 準備を済ませ、メインループでデータ送信を繰り返すタスク。
-static void app_task(void* pvParameters)
+static void app_task(void *pvParameters)
 {
     (void)pvParameters;
 
@@ -437,8 +437,8 @@ static void app_task(void* pvParameters)
     }
 
     // 映像と音声は専用のタスクで送り続けます。データはこのタスクのループで送ります。
-    if ((xTaskCreate(&media_send_task, s_video_sender.task_name, SEND_TASK_STACK_SIZE, (void*)&s_video_sender, SEND_TASK_PRIORITY, NULL) != pdPASS) ||
-            (xTaskCreate(&media_send_task, s_audio_sender.task_name, SEND_TASK_STACK_SIZE, (void*)&s_audio_sender, SEND_TASK_PRIORITY, NULL) != pdPASS)) {
+    if ((xTaskCreate(&media_send_task, s_video_sender.task_name, SEND_TASK_STACK_SIZE, (void *)&s_video_sender, SEND_TASK_PRIORITY, NULL) != pdPASS) ||
+            (xTaskCreate(&media_send_task, s_audio_sender.task_name, SEND_TASK_STACK_SIZE, (void *)&s_audio_sender, SEND_TASK_PRIORITY, NULL) != pdPASS)) {
         ESP_LOGE(TAG, "Stopped. Failed to create the send tasks.");
         vTaskDelete(NULL);
     }

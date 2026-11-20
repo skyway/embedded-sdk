@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">SkyWay Embedded SDK<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ $(function(){initNavTree('logger_8h_source.html','',''); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>} <a class="code hl_enumeration" href="logger_8h.html#af4b38d21dcf76d352b1781b7682deaf8">skw_logger_log_level_t</a>;</div>
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="logger_8h.html#a6e627fff4ca8ae0d4122f56e3921f537">   39</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="logger_8h.html#a6e627fff4ca8ae0d4122f56e3921f537">skw_logger_on_message_t</a>)(<a class="code hl_enumeration" href="logger_8h.html#af4b38d21dcf76d352b1781b7682deaf8">skw_logger_log_level_t</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span>* tag, <span class="keyword">const</span> <span class="keywordtype">char</span>* format, va_list args);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="logger_8h.html#a6e627fff4ca8ae0d4122f56e3921f537">   39</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="logger_8h.html#a6e627fff4ca8ae0d4122f56e3921f537">skw_logger_on_message_t</a>)(<a class="code hl_enumeration" href="logger_8h.html#af4b38d21dcf76d352b1781b7682deaf8">skw_logger_log_level_t</a> level, <span class="keyword">const</span> <span class="keywordtype">char</span> *tag, <span class="keyword">const</span> <span class="keywordtype">char</span> *format, va_list args);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structskw__logger__handlers__t.html">   42</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
@@ -135,7 +135,7 @@ $(function(){initNavTree('logger_8h_source.html','',''); });
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <a class="code hl_struct" href="structskw__logger__handlers__t.html">skw_logger_handlers_t</a>;</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="logger_8h.html#ae16072f89142bf459c4e32e844cf272c">   49</a></span><a class="code hl_enumeration" href="logger_8h.html#a09d68ee69f89776ee0866a9445e447e2">skw_logger_err_t</a> <a class="code hl_function" href="logger_8h.html#ae16072f89142bf459c4e32e844cf272c">skw_logger_register_handlers</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structskw__logger__handlers__t.html">skw_logger_handlers_t</a>* handlers);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="logger_8h.html#ae16072f89142bf459c4e32e844cf272c">   49</a></span><a class="code hl_enumeration" href="logger_8h.html#a09d68ee69f89776ee0866a9445e447e2">skw_logger_err_t</a> <a class="code hl_function" href="logger_8h.html#ae16072f89142bf459c4e32e844cf272c">skw_logger_register_handlers</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structskw__logger__handlers__t.html">skw_logger_handlers_t</a> *handlers);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="logger_8h.html#aa4fffd3b7b6024c242bade29bf033e76">   53</a></span><a class="code hl_enumeration" href="logger_8h.html#a09d68ee69f89776ee0866a9445e447e2">skw_logger_err_t</a> <a class="code hl_function" href="logger_8h.html#aa4fffd3b7b6024c242bade29bf033e76">skw_logger_unregister_handlers</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
